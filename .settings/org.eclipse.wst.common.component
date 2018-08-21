@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="bookstore Maven Webapp">
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/" source-path="/target/m2e-jee/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="pagehelper-3.4.2-fix.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pagehelper/pagehelper">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/bookstore Maven Webapp/target/classes"/>
+        <property name="context-root" value="empmvc141"/>
+    </wb-module>
+</project-modules>

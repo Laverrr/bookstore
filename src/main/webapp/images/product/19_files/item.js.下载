@@ -1,0 +1,162 @@
+/**
+ * Created by lipengfeijs on 2016/5/31.
+ */
+var item = (function ($) {
+    return new function () {
+        var spuInfo = prodSpuInfo;
+        var skuInfo = typeof prodSkuInfo != 'undefined' ? prodSkuInfo : [];
+        var callbackInfo;
+        $("body").attr("ddt-page", "p_" + spuInfo.productId);
+
+        this.getStock = function (pid) {
+            return callbackInfo.sku[pid].stock;
+        };
+        var _this = this;
+        // 首次回调
+        $.getJSON(window.localUrl, {
+            r: 'callback/product-info',
+            productId: spuInfo.isCatalog == '1' && spuInfo.mainProductId != '0' ? spuInfo.mainProductId : spuInfo.productId,
+            isCatalog: spuInfo.isCatalog,
+            shopId: spuInfo.shopId,
+            productType: spuInfo.productType
+        }, function (response) {
+            if (response.errMsg != "") {
+                return;
+            }
+            callbackInfo = response.data;
+            _this.base = spuInfo;
+            if (false == callbackInfo.hasOwnProperty("spu")) {
+                return;
+            }
+            if (true == spuInfo.isCatalog) {
+                if (spuInfo.productId == spuInfo.mainProductId) {
+                    merge(findMinPriceProduct());
+                } else {
+                    merge(spuInfo.productId);
+                }
+
+            } else {
+                _this.price = callbackInfo.spu.price;
+                _this.stock = callbackInfo.spu.stock;
+                if (true == callbackInfo.spu.hasOwnProperty('promotion')) {
+                    _this.promotion = callbackInfo.spu.promotion;
+                }
+                if (true == callbackInfo.spu.hasOwnProperty('activity')) {
+                    _this.activity = callbackInfo.spu.activity;
+                }
+                if (true == callbackInfo.spu.hasOwnProperty('coupon')) {
+                    _this.coupon = callbackInfo.spu.coupon;
+                }
+                _this.preSale = callbackInfo.spu.preSale;
+            }
+
+            _this.attachInfo = callbackInfo.attachInfo;
+
+            _this.base.serverTimeClock = callbackInfo.serverTimeClock;
+            delete callbackInfo.serverTimeClock;
+            $(document).ready(function () {
+                $('body').trigger("loadSku");
+                if (typeof initCookie != 'undefined') {
+                    initCookie.getCookie();
+                }
+            })
+
+        });
+
+        /**
+         *  合并基础数据信息，私有
+         *
+         *      1. 分色分码合并数据
+         *      2. 首次回调后合并数据
+         */
+        function merge(productId) {
+
+            var attributes = ['price', 'promotion', 'activity', 'stock', 'coupon'];
+            _this.base.productId = productId;
+            for (var i = 0; i < attributes.length; i++) {
+                if (true == callbackInfo.spu.hasOwnProperty(attributes[i])) {
+                    _this[attributes[i]] = $.extend(true, {}, callbackInfo.spu[attributes[i]]);
+                } else {
+                    _this[attributes[i]] = {};
+                }
+            }
+
+            if (true == callbackInfo.hasOwnProperty("sku") && productId in callbackInfo.sku) {
+                if (true == callbackInfo.sku[productId].hasOwnProperty('price')) {
+                    _this.price = $.extend(true, {}, callbackInfo.sku[productId].price);
+                }
+
+                if (true == callbackInfo.sku[productId].hasOwnProperty('promotion')) {
+                    for (var attr in callbackInfo.sku[productId].promotion) {
+                        if (callbackInfo.sku[productId].promotion.hasOwnProperty(attr)){
+                            _this.promotion[attr] = $.extend(true, {}, callbackInfo.sku[productId].promotion[attr]);
+                        }
+                    }
+                }
+                _this.activity = $.extend(true, {}, callbackInfo.sku[productId].activity);
+                _this.coupon = $.extend(true, {}, callbackInfo.sku[productId].coupon);
+                _this.stock = $.extend(true, {}, callbackInfo.sku[productId].stock);
+                _this.preSale = $.extend(true, {}, callbackInfo.sku[productId].preSale);
+                _this.base.isSoldOut = callbackInfo.sku[productId].core.is_sold_out || 0;
+                
+            }
+        }
+
+        this.merge = merge;
+        /**
+         * 获取最小价格的商品
+         */
+        function findMinPriceProduct() {
+            var arr = [];
+            var id, pid;
+            for (id in callbackInfo.sku) {
+                pid = id;
+                arr.push({
+                    id: pid,
+                    haveStock: callbackInfo.sku[pid].stock.stockStatus != '0',
+                    price: getMinPrice(pid)
+                });
+            }
+
+            arr.sort((function () {
+                    return function (p1, p2) {
+                        var ret = -1;
+                        if (p1.haveStock ^ p2.haveStock) {
+                            ret = p1.haveStock ? -1 : 1;
+                        } else {
+                            if (p1.price == p2.price) {
+                                ret = p1.id - p2.id;
+                            } else {
+                                ret = p1.price - p2.price;
+                            }
+                        }
+                        return ret;
+                    };
+                })()
+            );
+
+            function getMinPrice(productId) {
+                var minPrice = callbackInfo.sku[productId].price.salePrice;
+                // 限时抢
+                if ('promotion' in callbackInfo.sku[productId] && 'p102' in callbackInfo.sku[productId].promotion) {
+					var tmpPrice = parseFloat(callbackInfo.sku[productId].promotion.p102.price.directPrice);
+                    if (minPrice > tmpPrice) {
+                        minPrice = tmpPrice;
+                    }
+                }
+
+                // 秒杀
+                if ('promotion' in callbackInfo.sku[productId] && 'p230' in callbackInfo.sku[productId].promotion) {
+					var tmpPrice = parseFloat(callbackInfo.sku[productId].promotion.p230.price.directPrice);
+                    if (minPrice > tmpPrice) {
+                        minPrice = tmpPrice;
+                    }
+                }
+                return minPrice;
+            }
+
+            return arr[0].id;
+        }
+
+    };
+})(jQuery);
