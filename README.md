@@ -10,5 +10,8 @@
 
 后台管理地址 http://localhost:8080/backLoginPage.do# bookstore
 
+首页展示:
+![首页](https://github.com/Laverrr/bookstore/blob/master/index.jpg)
 
-![首页展示](https://github.com/Laverrr/bookstore/blob/master/index.jpg)
+后台展示:
+![后台](https://github.com/Laverrr/bookstore/blob/master/admin.jpg)
