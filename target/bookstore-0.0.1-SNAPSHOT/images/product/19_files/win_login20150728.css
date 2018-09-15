@@ -1,0 +1,140 @@
+html { font-size: 12px; color: #666; font-family: 'Microsoft YaHei'; }
+body, ul, li, ol, p, dl, dd, h1, h2, h3, h4, h5, h6, img, iframe, form { margin: 0; padding: 0; list-style-type: none; border: 0; }
+input[type=text]:focus { outline:none;}
+.public_login_pop .body:after { content: " "; height: 0; display: block; clear: both; visibility: hidden; }
+.public_login_pop .body { zoom: 1; }
+
+.public_login_pop { border: solid 1px #e6e6e6; width: 484px; background: #fefefe; }
+.public_login_pop .head { background: #f5f5f5; line-height: 38px; height: 38px; }
+.public_login_pop .head ul { float: left; }
+.public_login_pop .head li { float: left; font: normal 14px/38px 'Microsoft YaHei'; padding: 0 30px; cursor: pointer; }
+.public_login_pop .head .on { background: #fff; cursor: default; }
+.public_login_pop .head .close { background:url(http://img4.ddimg.cn/login/icon_20150706.png) 0 -400px no-repeat;width: 17px; height: 17px; overflow: hidden;float: right; margin: 9px 9px 0 0; cursor: pointer; }
+.public_login_pop .head .close_hover {background-position:0 -158px;}
+.public_login_pop .body { padding:20px 0 5px 0; position:relative; }
+.public_login_pop .body .text { border: solid 1px #e6e6e6;border-radius: 2px; line-height:36px; height:36px; width: 227px; padding: 0 4px; vertical-align: middle;font-family: 'Microsoft YaHei'; float:left; color:#333; }
+.public_login_pop .body .focus { border-color: #d2d2d2; }
+.public_login_pop .body .error { border-color: #ff4646; }
+.public_login_pop .body dt { float: left; width: 140px; text-align: right; font-size: 14px; line-height:38px; }
+.public_login_pop .body dd { float: left; line-height: 28px; color: #9c9c9c; width: 344px; height:68px; position:relative; }
+.public_login_pop .body dd .get_pin {vertical-align: middle; margin: 0 0 0 8px; width:110px; text-align:center; border: 1px solid #e6e6e6; background-color:#f1f1f1; color:#737373; display: inline-block; line-height:36px; height:36px;}
+.public_login_pop .body dd .get_pin:hover { background-color:#ebebeb; text-decoration:none;}
+.public_login_pop .body .checkbox { vertical-align: middle; padding: 0; margin: -4px 4px 0 0; }
+.public_login_pop .btn_login_g,.public_login_pop .btn_login_o,.public_login_pop .btn_login_d,.public_login_pop .btn_login_g_hover { border: 0; padding: 0 16px; margin: 0 0 10px 0; font-size: 14px;font-family:'Microsoft YaHei'; cursor: pointer; border-radius: 2px; color: #fff; word-spacing: 10px; background-repeat: repeat-x;overflow:visible;width:auto;height:25px;padding-bottom:2px;}
+.public_login_pop .btn_login_g { display:inline-block; font-size:20px; border: 0; width:178px; height:44px; line-height:44px; cursor: pointer; text-align:center; background-color:#ff2832; color:#fff; border-radius:22px; margin-top:20px;}
+.public_login_pop .btn_login_g:hover { background-color:#f01923; text-decoration:none;}
+.public_login_pop .btn_login_o {background-position:left -230px;margin:14px 0 10px;text-shadow:#333 1px 1px 2px;}
+.public_login_pop .btn_login_d {background-position:left -211px; height:19px;line-height:18px;font-size:12px;border:solid 1px #cbcbcd;color:#1a66b3;padding:0 10px;*line-height:15px;}
+.public_login_pop .btn_login_g_hover {background-position:left -25px; }
+.public_login_pop .body .button_box {height:auto; text-align:center; }
+
+.public_login_pop .msg_level { display: inline-block; margin: 0 8px 0 0; overflow: hidden; width:70px; vertical-align: middle; *display: inline; position: relative; top: -1px; }
+.public_login_pop .msg_level span { background-color: #d6d6d6; display: inline-block; height: 10px; margin-left: 1px; width: 22px; _height: 12px; _padding-top: 1px; _overflow: hidden; _margin-top: -16px; }
+.public_login_pop .msg_level .s1 { background-color: #ff3600; border-radius:2px 0 0 2px; }
+.public_login_pop .msg_level .s2 { background-color: #ffc000; }
+.public_login_pop .msg_level .s3 { background-color: #71b300; border-radius:0 2px 2px 0; }
+
+.public_login_pop .wrong,.public_login_pop .success { color: #f40000; margin: 5px 0; display: inline-block; clear: both; }
+.public_login_pop .overview { display: inline-block; clear: both;width:340px; }
+.public_login_pop .body .relative_box { position: relative; }
+.public_login_pop .relative_box .wrong { position: absolute; top:33px; left: 0; }
+.public_login_pop .lock_relative { position: relative; z-index: 10; }
+.public_login_pop .capslock_box { position: absolute; width: 275px; height:20px; background: url(http://img4.ddimg.cn/login/big_tip_bg.png); left: 0; top: 39px; line-height: 16px; padding:8px 0 0 35px; }
+.public_login_pop .capslock_box b { clear: both; display: block; color: #404040; padding: 2px 0 4px 26px; }
+.public_login_pop .icon_yes, .public_login_pop .icon_wrong {display: inline-block;margin:0 5px;width: 16px;height: 16px;background: url(http://img4.ddimg.cn/login/icon_20150706.png) 0 -36px no-repeat; vertical-align:middle;}
+.public_login_pop .icon_wrong { background-position:0 -13px;}
+.public_login_pop .icon_yes,.public_login_pop .icon_wrong { position:absolute; top:8px;}
+.public_login_pop .icon_yes.pin_i,.public_login_pop .icon_wrong.pin_i { position:absolute; left:90px; top:9px;}
+
+.public_login_pop .text_box {float:left; line-height:24px;}
+.public_login_pop .text_box .mail {font-weight:bold;font-size:14px;color:#404040;}
+.public_login_pop .text_box .black {color:#404040; }
+.public_login_pop .p_number { display:inline-block;vertical-align:middle;color:#404040;font-size:14px;font-weight:bold;padding-right:18px;line-height:26px;height:26px;}
+.public_login_pop a {color:#1a66b3;text-decoration:none; }
+.public_login_pop a:hover {text-decoration:underline; }
+
+.public_login_pop .success_box { padding:0; }
+.public_login_pop .success_box .icon_yes_b { display: inline-block; vertical-align: middle; width:28px; height:28px; background:url(http://img4.ddimg.cn/login/icon_20150706.png) 0 -80px no-repeat; margin:0 10px 0 0;}
+.public_login_pop .success_box .text_box { clear: both; display: block; }
+.public_login_pop .success_box p {text-align:center; line-height: 36px; }
+.public_login_pop .success_box p .f16 { font-size:16px; color:#5a5a5a;}
+.public_login_pop .success_table { width:350px; padding:0; margin:26px auto 0; font-size:16px; color:#282828; border:1px solid #fdebc1; border-width:1px 1px 0 1px; line-height:44px;}
+.public_login_pop .success_table th { width:108px; font-weight:normal; background-color:#fdf5e0;  border-right:1px solid #fdebc1; border-bottom:1px solid #fdebc1; padding:0; margin:0;}
+.public_login_pop .success_table td { padding:0 0 0 30px; margin:0; background-color:#fdf5e0;  border-bottom:1px solid #fdebc1;}
+
+
+
+.infro{width:311px; margin:0 auto;}
+.infro .title{height:46px;font:normal 14px/46px "Microsoft Yahei";color: #666;font-size:14px;}
+.infro .username,.infro .password,.infro .code{height:36px;border:1px solid #e6e6e6;width:310px; border-radius:2px; position:relative; }
+.infro .text_del { width: 10px; height: 11px; display: block; top: 12px; left: 290px; position: absolute; background: url(http://img4.ddimg.cn/login/icon_20150706.png) 0 -230px no-repeat;}
+.infro .code_wrap{height: 38px;}
+.infro .code{width:126px;float: left;}
+.infro .username span,.infro .password span,.infro .code span{width:30px; margin-right:10px;height:36px;float:left;background:url("http://img4.ddimg.cn/login/icon_20150706.png") 10px -110px no-repeat;}
+.infro .password span{background-position:10px -150px;}
+.infro .code span{background-position:10px -189px;}
+.infro .username.error span{background-position:-14px -110px;}
+.infro .password.error span{background-position:-14px -150px;}
+.infro .code.error span{background-position:-16px -189px;}
+.infro .username input,.infro .password input,.infro .code input{float:left;height:36px; line-height:36px;padding:0;border:0;color:#333;font-family: 'Microsoft YaHei';}
+.infro .username input,.infro .password input{width:270px;}
+.infro .code input{width:86px;float:left;}
+.tips{height:30px;line-height:30px; padding-left:10px;}
+.tips span{display:none;}
+.tips span.big_tip, .tips span.error_choose  { background:url(http://img4.ddimg.cn/login/big_tip_bg.png) 0 0 no-repeat; margin-left:-10px; color:#ff8400; padding-left:32px;}
+.tips span.error_choose { padding-left:10px; color:#505050;}
+.tips span.error_choose b { background-color:#fff0cf; vertical-align: middle;}
+.tips span.error_choose input { margin:0 3px 0 7px; vertical-align: middle;}
+.code_pic{width:86px;height:38px;float: left;margin:0 15px 0 5px;}
+dd .code_pic { margin:0;}
+.code_pic img{width:86px;height:38px;} .code_wrap a { line-height:38px;}
+.code_picww { line-height:38px;}
+.infro .error{border-color:#f44700; border:1px solid #ff0000;}
+.error_words{color:#f42e00;}
+.auto_login{width:310px;height:27px;line-height:22px;padding-top:7px;overflow:hidden;}
+.auto_login a{float:right;}
+.auto_login input{vertical-align: middle;margin-top:-1px;}
+.safe{display:none;}
+.infro .btn a{width:100%;border-radius:5px;color:#fff;display: inline-block;height:44px;text-align: center;font:normal 20px/44px "Microsoft Yahei";background:#ff2832;}
+.infro .btn a:hover{background:#f01923;text-decoration:none;}
+
+.register{height:24px;line-height: 24px;padding-top:6px;}
+.register span{}
+.register .register_btn,.register .register_btn:hover{float:right;color:#6e6e6e;}
+.register .other{float:left;}
+.infro .partner dt { float:left; margin-right:5px; width:20px;}
+.infro .partner dt a { width:20px; height:20px; display:block; background:url(http://img4.ddimg.cn/login/icon_20150706.png) 0 -260px no-repeat; text-indent:99em; overflow:hidden;}
+.infro .partner dt a.qq:hover { background-position:-20px -260px;}
+.infro .partner dt a.wx { background-position:0 -280px;} .partner dt a.wx:hover { background-position:-20px -280px;}
+.infro .partner dt a.wb { background-position:0 -300px;} .partner dt a.wb:hover { background-position:-20px -300px;}
+.infro .partner dt a.alpay { background-position:0 -320px;} .partner dt a.alpay:hover { background-position:-20px -320px;}
+
+.infro .partner dd { padding-left:10px; position:relative; float:left; line-height:20px; width:70px;}
+.infro .partner dd a { color:#969696;} .partner dd a:hover { color:#787878; text-decoration:none;}
+.infro .partner dd a em { width:8px; height:20px; display:inline-block; background:url(http://img4.ddimg.cn/login/icon_20150706.png) 0 -340px no-repeat; vertical-align:text-bottom; margin-left:5px;}
+/*.infro .partner dd a:hover em { background-position: -33px -340px;}*/
+.infro .partner dd ul{position:absolute; width:190px; padding:5px 0 1px 10px; background-color:#fafafa; border:1px solid #eaeaea; border-radius:2px; left:10px; top:24px;}
+.infro .partner dd ul li.arrow { position:absolute; width:10px; height:6px; top:-5px; left:7px; background:url(http://img4.ddimg.cn/login/more_arr.png) 0 0 no-repeat;}
+.infro .partner dd ul li{float:left;margin-right:22px;height:18px;line-height: 18px;}
+.infro .partner dd ul li.mr0{margin-right:0;}
+.infro .partner dd li a{color:#666;}
+.infro .replacetype01 {
+  position: absolute;
+  top: 44px;
+  right: 0;
+}
+.new_tip { line-height: 24px; width: 338px; margin: 0px auto 15px; color: #828282; padding: 0 5px 0 22px; background: url(http://img4.ddimg.cn/login/new_tip.png) 3px 5px no-repeat #ffffff;}
+.infro .username.focus,.infro .password.focus,.infro .code.focus{border-color:#969696;}
+.partner dd a.hover em { background-position: -33px -340px;}
+#vcodeImgWrap {outline:none;}
+
+#main_wind .icon_yes,#main_wind .icon_wrong, #main_wind .overview{ display: none;}
+#J_countDownTip:hover { background-color:#f1f1f1; text-decoration:none;cursor: text;}
+#J_submitRegisterUnclick:hover { background-color:#f01923; text-decoration:none; cursor: text;}
+
+#main_wind .text:focus{color: #505050;border-color: #969696;}
+::-webkit-input-placeholder {color: #969696;}/* WebKit browsers */
+:-moz-placeholder {color: #969696 !important ;}/* Mozilla Firefox 19+ */
+::-moz-placeholder {color: #969696 !important;} /* Mozilla Firefox 19+ */
+:-ms-input-placeholder {color: #969696 !important;} /* Internet Explorer 10+ */
+.infro input, input.text{outline: none;}

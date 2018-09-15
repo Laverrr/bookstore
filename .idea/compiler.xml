@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="bookstore" />
         <module name="empmvc141" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="bookstore" target="1.7" />
       <module name="empmvc141" target="1.7" />
     </bytecodeTargetLevel>
   </component>

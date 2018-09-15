@@ -1,0 +1,734 @@
+/**
+ * 单品页
+ * @version 2.0 上线版本号
+ * @author fpf
+ * @编码gbk
+ * 全新结构,将所有模块整理到同一入口
+ */
+(function (window, $) {
+    /**
+     * 时间格式化
+     * @param x Date 时间
+     * @param y 样式
+     * @returns {XML|string|void}
+     */
+    function date2str(x, y) {
+        var z = {
+            y: x.getFullYear(),
+            M: x.getMonth() + 1,
+            d: x.getDate(),
+            h: x.getHours(),
+            m: x.getMinutes(),
+            s: x.getSeconds(),
+            S: x.getTime()
+        };
+        return y.replace(/(y+|M+|d+|h+|m+|s+|S+)/g, function (v) {
+            return ((v.length > 1 ? "0" : "") + eval('z.' + v.slice(-1))).slice(-(v.length > 2 ? v.length : 2))
+        });
+    }
+
+    /**
+     * 生产唯一id
+     */
+    var uuid = (function () {
+        var random = Math.random().toString().substring(2, 20);
+        return date2str(new Date(), "yyyyMMddhhmmssSSS").concat("_").concat(random, "E");
+    });
+
+    /**
+     * 获取cookie
+     **/
+    function getCookie(name) {
+        var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+        if (arr = document.cookie.match(reg))
+            return unescape(arr[2]);
+        else
+            return null;
+    }
+
+    var config = {server: "http://recosys.dangdang.com/realdata/collect.jpg", intervalTime: 400, state: 'dev'};
+    var MODULE = {
+        alsoview_mall: "alsoview_mall", // 百货_alsoview
+        alsoview_pub: "alsoview_pub",  // 图书_alsoview
+        alsoview_cloth: "alsoview_cloth",  // 服装_alsoview
+        alsobuy_mall: "alsobuy_mall",  // 百货_alsobuy
+        alsobuy_pub: "alsobuy_pub",  // 图书_alsobuy
+        alsobuy_cloth: "alsobuy_cloth", // 服装_alsobuy
+        package_mall: "package_mall", // 百货_package
+        package_pub: "package_pub",  // 图书_package
+        package_cloth: "package_cloth", // 服装_package
+        relate_pub: "relate_pub", //图书关联选购
+        relate_mall: "relate_mall", //百货关联选购
+        relate_cloth: "relate_cloth",
+        historyreco_pub: "historyreco_pub", //浏览历史猜你喜欢
+        historyreco_cloth: "historyreco_cloth", //浏览历史猜你喜欢
+        historyreco_mall: "historyreco_mall" //浏览历史猜你喜欢
+    };
+    var perm_id = getCookie("__permanent_id");//用户标识
+    var main_pid = null; //主商品id，被添加商品
+    // 运行周期
+    var reco_timer = {
+        relate_timer: null,
+        package_timer: null,
+        alsobuy_timer: null,
+        alsoview_timer: null,
+        historyreco_timer: null
+    };
+    // 各模块li表
+    var reco_list = {
+        relate_list: null,
+        package_list: null,
+        alsobuy_list: null,
+        alsoview_list: null,
+        historyreco_list: null
+    };
+    // 运行标记
+    var reco_flag = {
+        relate_flag: false,
+        package_flag: false,
+        alsobuy_flag: false,
+        alsoview_flag: false,
+        historyreco_flag: false
+    };
+
+    var pagesize = 0; //翻页时每页商品数量
+    if (isWidth) {
+        pagesize = 5
+    } else {
+        pagesize = 4
+    }
+
+    /**
+     * 发送点击信息
+     * @param strvalue
+     */
+    function report_click(strvalue) {
+        strvalue = config.server + '?' + strvalue + '&type=1&random_id=' + Math.random();
+        $(document.body).append("<img style=\"display: none;\" src=\"" + strvalue + "\"/>");
+    }
+
+    /**
+     * 发送曝光数据
+     * @param li 数据
+     */
+    function report(li) {
+        var position = $(li).attr("position");
+        var traced = $(li).attr("traced");
+        if (position != null && traced != 1) {
+            var src = config.server + "?" + position + "&type=0&random_id=" + Math.random();
+            $(document.body).append("<img style=\"display: none;\" src=\"" + src + "\"/>");
+            $(li).attr("traced", 1)
+        }
+    }
+
+    function report_list(li_list) {
+        for (var i = 0; i < li_list.length; i++) {
+            var position = $(li_list[i]).attr("position");
+            var traced = $(li_list[i]).attr("traced");
+            if (position != null && traced != 1) {
+                var src = config.server + "?" + position + "&type=0&random_id=" + Math.random();
+                $(document.body).append("<img style=\"display: none;\" src=\"" + src + "\"/>");
+                $(li_list[i]).attr("traced", 1); //曝光标记
+            }
+        }
+    }
+
+
+    /**
+     * 监测是否进入可视区
+     * @param page 翻页
+     * @param clientHeight
+     * @param scrollTop
+     */
+    function trace(li_list, clientHeight, scrollTop) {
+        if (li_list != null && li_list.length > 0) {
+            for (var i = 0; i < li_list.length; i++) {
+                var offsetTop = $(li_list[i]).offset().top;
+                var height = $(li_list[i]).height();
+                if (offsetTop < scrollTop) {
+                    //已经滚动到可视取上方
+                    if ((offsetTop + height) > scrollTop && (offsetTop + height) < (clientHeight + scrollTop)) {
+                        //露出尾部
+                        report(li_list[i]);
+                    } else if ((offsetTop + height) < scrollTop) {
+                        //上方不可见位置
+                    }
+                } else if (offsetTop < clientHeight + scrollTop) {
+                    //进入可视区
+                    report(li_list[i]);
+                } else {
+                    //在可视区下方
+                }
+            }
+        }
+    }
+
+
+    /*reco分页事件*/
+    function reco_trace_page(reco_list_id, page_num, size) {
+        var li_list = get_reco_visible_list(reco_list_id, page_num, size);
+        if (li_list.length > 0) {
+            report_list(li_list);
+        }
+    }
+
+
+    /*获取reco可见模块*/
+    function get_reco_visible_list(reco_list_id, page_num, size) {
+        if (page_num == null){
+            return reco_list_id;
+        }
+        var report_lists = reco_list_id.slice(size * (page_num - 1), page_num * size);
+        return report_lists;
+    }
+
+
+    /*
+     *reco模块监控
+     */
+    function test_recoData(timer, reco_struct, moudle_name) {
+        var reco_div = $(reco_struct.reco_div_id);
+        reco_list[reco_struct.list] = $(reco_div).find(reco_struct.reco_list_id).find(reco_struct.li_element);
+
+        if (reco_list[reco_struct.list].length > 0) {
+            //去除timer和标记
+            clearInterval(timer);
+            if (reco_flag[reco_struct.flag] == true){
+                return;
+            }
+            reco_flag[reco_struct.flag] = true;
+            //新版本为双行
+            var now_pagesize = reco_struct.pagesize;
+            if (reco_struct.pagesize != 0){
+                var is_version = $(reco_div).find("div.over").find("div.list_page");
+                now_pagesize = (is_version.length == 0)?now_pagesize:now_pagesize*2;//新版本2行
+            }
+            //翻页page是,由于添加了前后两页,需要去除前后两页
+            var prelist = null;
+            var lastlist = null;
+            if (now_pagesize != 0){
+                if (reco_list[reco_struct.list].length > now_pagesize) {
+                    prelist = reco_list[reco_struct.list].slice(0, now_pagesize);
+                    lastlist = reco_list[reco_struct.list].slice(reco_list[reco_struct.list].length - now_pagesize);
+                    reco_list[reco_struct.list] = reco_list[reco_struct.list].slice(now_pagesize, reco_list[reco_struct.list].length - now_pagesize);
+                }
+            }
+
+            var i = 0;
+            for (i = 0; i < reco_list[reco_struct.list].length; i++) {
+                //获取点击url,用以获取recopid
+                if (reco_struct.a_class == ""){
+                    var url = $(reco_list[reco_struct.list][i]).attr("href");
+                }
+                else{
+                    var url = $(reco_list[reco_struct.list][i]).find(reco_struct.a_class).attr("href");
+                    if (url == null) {
+                        url = $(reco_list[reco_struct.list][i]).find("a").attr("href");
+                    }
+                }
+                //检测是否为空
+                var img = $(reco_list[reco_struct.list][i]).find(reco_struct.img);//产品图片
+                if (img.length == 0) {
+                    //遇到没有图片的商品就直接跳过
+                    break;
+                }
+                //获取写在li上的requestid,关联选购requestid为空,定位-1
+                if(reco_struct.request_element_name == ""){
+                    var request_id = "-1";
+                }
+                else{
+                    var request_id = $(reco_list[reco_struct.list][i]).attr(reco_struct.request_element_name);
+                }
+                if (request_id == null){
+                    request_id = "-1";
+                }
+                //解析recopid,定义
+                var reco_pid = /\d+/.exec(url)[0];
+                if (url == 'javascript:void(0);' && reco_struct.flag == "relate_flag") {
+                    reco_pid = main_pid;
+                }
+                var position = i + 1;
+                var params = {
+                    request_id: request_id,
+                    perm_id: perm_id,
+                    module: moudle_name,
+                    main_pid: reco_struct.mainid,
+                    reco_pid: reco_pid,
+                    position: position,
+                    state: config.state, // 状态
+                    client: "PC"
+                };
+                var paramsstr = $.param(params);
+                $(reco_list[reco_struct.list][i]).attr("position", paramsstr);
+
+
+                //添加点击事件:0为关联选购条件
+                if (reco_struct.a_depth == 1){
+                    $(reco_list[reco_struct.list][i]).find("a").click(function () {
+                        var position = $(this).parent().attr("position");
+                        if (position == null) {
+                            position = $($(this).parent()).parent().attr("position");
+                        }
+                        report_click(position);
+                    });
+                }
+                else if(reco_struct.a_depth == 2){
+                    $(reco_list[reco_struct.list][i]).find("a").click(function () {
+                        if ($(this).attr("href") != "javascript:void(0)"){//去除勾选点击
+                            var position = $($(this).parent()).parent().attr("position");
+                            if (position == null) {
+                                position = $(this).parent().attr("position");
+                            }
+                            report_click(position);
+                        }
+                    });
+                }
+                else if(reco_struct.a_depth == 0){
+                    $(reco_list[reco_struct.list][i]).click(function () {
+                        var position = $(this).attr("position");
+                        report_click(position); //发送点击数据
+                    });
+
+                }
+            }
+
+            // 边沿
+            if (now_pagesize != 0){
+                if (prelist != null && lastlist != null && reco_list[reco_struct.list].length >= now_pagesize) {
+                    for (var j = 0; j < prelist.length; j++) {
+                        var index = reco_list[reco_struct.list].length - now_pagesize + j;
+                        var p = $(reco_list[reco_struct.list][index]).attr("position");
+                        $(prelist[j]).attr("position", p);
+                        $(prelist[j]).find("a").click(function () {
+                            var position = $($(this).parent()).parent().attr("position");
+                            report_click(position);
+                        })
+                    }
+                    for (var k = 0; k < lastlist.length; k++) {
+                        var index = k;
+                        var p = $(reco_list[reco_struct.list][index]).attr("position");
+                        $(lastlist[k]).attr("position", p);
+                        $(lastlist[k]).find("a").click(function () {
+                            var position = $($(this).parent()).parent().attr("position");
+                            report_click(position);
+                        })
+                    }
+                }
+            }
+
+            reco_list[reco_struct.list].splice(i);//剪切数据，剪切掉空元素
+            //添加分页事件
+            //左翻页
+            if(reco_struct.left_id != ""){
+                var prev = $(reco_div).find(reco_struct.left_id).click(function () {
+                    setTimeout(function () {
+                        var nowpage = null;
+                        if (reco_struct.nowpage == true){
+                            nowpage = parseInt($(reco_div).find("#now_page").html());
+                        }
+                        reco_trace_page(reco_list[reco_struct.list], nowpage, now_pagesize);
+                    }, 50);
+                });
+            }
+            //右翻页
+            if(reco_struct.right_id != ""){
+                var next = $(reco_div).find(reco_struct.right_id).click(function () {
+                    setTimeout(function () {
+                        var nowpage = null;
+                        if (reco_struct.nowpage == true){
+                            nowpage = parseInt($(reco_div).find("#now_page").html());
+                        }
+                        reco_trace_page(reco_list[reco_struct.list], nowpage, now_pagesize);
+                    }, 50);
+                });
+            }
+            //圆点点击
+            if(reco_struct.fanye_id != ""){
+                var topage = $(reco_div).find(reco_struct.fanye_id).click(function () {
+                    setTimeout(function () {
+                        var nowpage = null;
+                        reco_trace_page(reco_list[reco_struct.list], nowpage, now_pagesize);
+                    }, 50);
+                });
+            }
+
+            //第一页曝光
+            var clientHeight = $(window).height();
+            var scrollTop = $(document).scrollTop();
+            var nowpage = null;
+            if (reco_struct.nowpage == true){
+                nowpage = 1;
+            }
+            var first_report_lists = get_reco_visible_list(reco_list[reco_struct.list], nowpage, now_pagesize);
+            trace(first_report_lists, clientHeight, scrollTop);
+
+            //添加滚动事件
+            $(window).scroll(function () {
+                var clientHeight = $(window).height();
+                var scrollTop = $(document).scrollTop();
+                var nowpage = null;
+                if (reco_struct.nowpage == true){
+                    nowpage = parseInt($(reco_div).find("#now_page").html());
+                }
+                var report_lists = get_reco_visible_list(reco_list[reco_struct.list], nowpage, now_pagesize);
+                trace(report_lists, clientHeight, scrollTop);
+            });
+        }
+
+    }
+
+
+    /**
+     * 当当单品页
+     */
+    function pub_start(mainid, row_num) {
+        //alert("当当单品页");
+        //打包购买
+        var package_reco = {
+            list: "package_list", //list名称
+            reco_div_id: "#buyTogether", //div层id
+            reco_list_id: "#buyTogether_lists", //li元素id
+            li_element: "li", //查找元素
+            mainid: mainid,
+            request_element_name: "data-request-id", //requsetid元素属性值
+            request_element_id: "", //requsetid元素id
+            a_class: "p.pic a", //链接id
+            img: "p.pic a img", //图片id
+            a_depth: 2, //链接离li深度
+            right_id: "", //右翻页id
+            left_id: "", //左翻页id
+            fanye_id: "", //翻页按钮id
+            flag: "package_flag", //运行标志
+            pagesize: 0, //是否翻页,剪切页面大小
+            nowpage: false //是否有页码标识
+        };
+        reco_timer.package_timer = setInterval(function () {
+            test_recoData(reco_timer.package_timer, package_reco, MODULE.package_pub);
+        }, config.intervalTime);
+
+        //买了还买
+        var alsobuy_reco = {
+            list: "alsobuy_list",
+            reco_div_id: "#alsoBuy",
+            reco_list_id: ".bucket",
+            li_element: "li", //查找元素
+            mainid: mainid,
+            request_element_name: "data-request-id",
+            request_element_id: "",
+            a_class: "p.pic a",
+            img: "p.pic a img",
+            a_depth: 2,
+            right_id: "a.next", //"div.left"
+            left_id: "a.prev", //"div.right"
+            fanye_id: "", //"div.recommend_fanye",
+            flag: "alsobuy_flag",
+            pagesize: pagesize,
+            nowpage: true
+        };
+        reco_timer.alsobuy_timer = setInterval(function () {
+            test_recoData(reco_timer.alsobuy_timer, alsobuy_reco, MODULE.alsobuy_pub);
+        }, config.intervalTime);
+
+       //看了还看
+        var alsoview_reco = {
+            list: "alsoview_list",
+            reco_div_id: "#alsoView",
+            reco_list_id: ".list_alsoview",
+            li_element: "li", //查找元素
+            mainid: mainid,
+            request_element_name: "data-request-id",
+            request_element_id: "",
+            a_class: "p.pic a",
+            img: "p.pic a img",
+            a_depth: 2,
+            right_id: "", //"div.left"
+            left_id: "", //"div.right"
+            fanye_id: "", //"div.recommend_fanye",
+            flag: "alsoview_flag",
+            pagesize: 0,
+            nowpage: false
+        };
+        reco_timer.alsoview_timer = setInterval(function () {
+            test_recoData(reco_timer.alsoview_timer, alsoview_reco, MODULE.alsoview_pub);
+        }, config.intervalTime);
+
+        //历史推荐
+        var historyreco_reco = {
+            list: "historyreco_list",
+            reco_div_id: "#historyReco",
+            reco_list_id: ".bucket",
+            li_element: "li", //查找元素
+            mainid: mainid,
+            request_element_name: "data-request-id",
+            request_element_id: "",
+            a_class: "p.pic a",
+            img: "p.pic a img",
+            a_depth: 2,
+            right_id: "a.next", //"div.left"
+            left_id: "a.prev", //"div.right"
+            fanye_id: "", //"div.recommend_fanye",
+            flag: "historyreco_flag",
+            pagesize: pagesize,
+            nowpage: true
+        };
+        reco_timer.historyreco_timer = setInterval(function () {
+            test_recoData(reco_timer.historyreco_timer, historyreco_reco, MODULE.historyreco_pub);
+        }, config.intervalTime);
+
+       //关联选购
+        var relate_reco = {
+            list: "relate_list",
+            reco_div_id: "div.cuxiao_info.choose_xilie.clearfix",
+            reco_list_id: "ul.list_e li",
+            li_element: "a", //查找元素
+            mainid: mainid,
+            request_element_name: "",
+            request_element_id: "",
+            a_class: "",
+            img: "img",
+            a_depth: 0,
+            right_id: "", //"div.left"
+            left_id: "", //"div.right"
+            fanye_id: "", //"div.recommend_fanye",
+            flag: "relate_flag",
+            pagesize: 0,
+            nowpage: false
+        };
+        reco_timer.relate_timer = setInterval(function () {
+            test_recoData(reco_timer.relate_timer, relate_reco, MODULE.relate_pub);
+        }, config.intervalTime);
+    }
+
+    function fashion_start(mainid) {
+        //打包购买
+        var package_reco = {
+            list: "package_list", //list名称
+            reco_div_id: "#buyTogether", //div层id
+            reco_list_id: "#buyTogether_lists", //li元素id
+            li_element: "li", //查找元素
+            mainid: mainid,
+            request_element_name: "data-request-id", //requsetid元素属性值
+            request_element_id: "", //requsetid元素id
+            a_class: "p.pic a", //链接id
+            img: "p.pic a img", //图片id
+            a_depth: 2, //链接离li深度
+            right_id: "", //右翻页id
+            left_id: "", //左翻页id
+            fanye_id: "", //翻页按钮id
+            flag: "package_flag", //运行标志
+            pagesize: 0, //是否翻页,剪切页面大小
+            nowpage: false //是否有页码标识
+        };
+        reco_timer.package_timer = setInterval(function () {
+            test_recoData(reco_timer.package_timer, package_reco, MODULE.package_cloth);
+        }, config.intervalTime);
+
+        //买了还买
+        var alsobuy_reco = {
+            list: "alsobuy_list",
+            reco_div_id: "#alsoBuy",
+            reco_list_id: ".list_alsoview",//ul名称是alsoview
+            li_element: "li", //查找元素
+            mainid: mainid,
+            request_element_name: "data-request-id",
+            request_element_id: "",
+            a_class: "p.pic a",
+            img: "p.pic a img",
+            a_depth: 2,
+            right_id: "", //"div.left"
+            left_id: "", //"div.right"
+            fanye_id: "", //"div.recommend_fanye",
+            flag: "alsobuy_flag",
+            pagesize: 0,
+            nowpage: false
+        };
+        reco_timer.alsobuy_timer = setInterval(function () {
+            test_recoData(reco_timer.alsobuy_timer, alsobuy_reco, MODULE.alsobuy_cloth);
+        }, config.intervalTime);
+
+       //看了还看
+        var alsoview_reco = {
+            list: "alsoview_list",
+            reco_div_id: "#alsoView",
+            reco_list_id: ".bucket",
+            li_element: "li", //查找元素
+            mainid: mainid,
+            request_element_name: "data-request-id",
+            request_element_id: "",
+            a_class: "p.pic a",
+            img: "p.pic a img",
+            a_depth: 2,
+            right_id: "a.next", //"div.left"
+            left_id: "a.prev", //"div.right"
+            fanye_id: "", //"div.recommend_fanye",
+            flag: "alsoview_flag",
+            pagesize: pagesize,
+            nowpage: true
+        };
+        reco_timer.alsoview_timer = setInterval(function () {
+            test_recoData(reco_timer.alsoview_timer, alsoview_reco, MODULE.alsoview_cloth);
+        }, config.intervalTime);
+
+        //历史推荐
+        var historyreco_reco = {
+            list: "historyreco_list",
+            reco_div_id: "#historyReco",
+            reco_list_id: ".bucket",
+            li_element: "li", //查找元素
+            mainid: mainid,
+            request_element_name: "data-request-id",
+            request_element_id: "",
+            a_class: "p.pic a",
+            img: "p.pic a img",
+            a_depth: 2,
+            right_id: "a.next", //"div.left"
+            left_id: "a.prev", //"div.right"
+            fanye_id: "", //"div.recommend_fanye",
+            flag: "historyreco_flag",
+            pagesize: pagesize,
+            nowpage: true
+        };
+        reco_timer.historyreco_timer = setInterval(function () {
+            test_recoData(reco_timer.historyreco_timer, historyreco_reco, MODULE.historyreco_cloth);
+        }, config.intervalTime);
+    }
+
+    function mall_start(mainid) {
+        //打包购买
+        var package_reco = {
+            list: "package_list", //list名称
+            reco_div_id: "#buyTogether", //div层id
+            reco_list_id: "#buyTogether_lists", //li元素id
+            li_element: "li", //查找元素
+            mainid: mainid,
+            request_element_name: "data-request-id", //requsetid元素属性值
+            request_element_id: "", //requsetid元素id
+            a_class: "p.pic a", //链接id
+            img: "p.pic a img", //图片id
+            a_depth: 2, //链接离li深度
+            right_id: "", //右翻页id
+            left_id: "", //左翻页id
+            fanye_id: "", //翻页按钮id
+            flag: "package_flag", //运行标志
+            pagesize: 0, //是否翻页,剪切页面大小
+            nowpage: false //是否有页码标识
+        };
+        reco_timer.package_timer = setInterval(function () {
+            test_recoData(reco_timer.package_timer, package_reco, MODULE.package_mall);
+        }, config.intervalTime);
+
+        //买了还买
+        var alsobuy_reco = {
+            list: "alsobuy_list",
+            reco_div_id: "#alsoBuy",
+            reco_list_id: ".list_alsoview",//ul名称是alsoview
+            li_element: "li", //查找元素
+            mainid: mainid,
+            request_element_name: "data-request-id",
+            request_element_id: "",
+            a_class: "p.pic a",
+            img: "p.pic a img",
+            a_depth: 2,
+            right_id: "", //"div.left"
+            left_id: "", //"div.right"
+            fanye_id: "", //"div.recommend_fanye"
+            flag: "alsobuy_flag",
+            pagesize: 0,
+            nowpage: false
+        };
+        reco_timer.alsobuy_timer = setInterval(function () {
+            test_recoData(reco_timer.alsobuy_timer, alsobuy_reco, MODULE.alsobuy_mall);
+        }, config.intervalTime);
+
+       //看了还看
+        var alsoview_reco = {
+            list: "alsoview_list",
+            reco_div_id: "#alsoView",
+            reco_list_id: ".bucket",
+            li_element: "li", //查找元素
+            mainid: mainid,
+            request_element_name: "data-request-id",
+            request_element_id: "",
+            a_class: "p.pic a",
+            img: "p.pic a img",
+            a_depth: 2,
+            right_id: "a.next", //"div.left"
+            left_id: "a.prev", //"div.right"
+            fanye_id: "", //"div.recommend_fanye",
+            flag: "alsoview_flag",
+            pagesize: pagesize,
+            nowpage: true
+        };
+        reco_timer.alsoview_timer = setInterval(function () {
+            test_recoData(reco_timer.alsoview_timer, alsoview_reco, MODULE.alsoview_mall);
+        }, config.intervalTime);
+
+        //历史推荐
+        var historyreco_reco = {
+            list: "historyreco_list",
+            reco_div_id: "#historyReco",
+            reco_list_id: ".bucket",
+            li_element: "li", //查找元素
+            mainid: mainid,
+            request_element_name: "data-request-id",
+            request_element_id: "",
+            a_class: "p.pic a",
+            img: "p.pic a img",
+            a_depth: 2,
+            right_id: "a.next", //"div.left"
+            left_id: "a.prev", //"div.right"
+            fanye_id: "", //"div.recommend_fanye",
+            flag: "historyreco_flag",
+            pagesize: pagesize,
+            nowpage: true
+        };
+        reco_timer.historyreco_timer = setInterval(function () {
+            test_recoData(reco_timer.historyreco_timer, historyreco_reco, MODULE.historyreco_mall);
+        }, config.intervalTime);
+
+       //关联选购
+        var relate_reco = {
+            list: "relate_list",
+            reco_div_id: "div.cuxiao_info.choose_xilie.clearfix",
+            reco_list_id: "ul.list_e li",
+            li_element: "a", //查找元素
+            mainid: mainid,
+            request_element_name: "",
+            request_element_id: "",
+            a_class: "",
+            img: "img",
+            a_depth: 0,
+            right_id: "", //"div.left"
+            left_id: "", //"div.right"
+            fanye_id: "", //"div.recommend_fanye",
+            flag: "relate_flag",
+            pagesize: 0,
+            nowpage: false
+        };
+        reco_timer.relate_timer = setInterval(function () {
+            test_recoData(reco_timer.relate_timer, relate_reco, MODULE.relate_mall);
+        }, config.intervalTime);
+    }
+
+    window.CC = {
+        /**
+         * 启动埋点监控
+         */
+        cc: function (conf) {
+            main_pid = conf.mainpid; //主商品id
+            var type = conf.type; //单品页类型 图书publish 服装cloth 百货mall
+            var row_num = conf.rowNum;
+            row_num = (row_num == null)? 1:row_num;
+            if (type == "publish") {
+                //图书
+                pub_start(main_pid, row_num);
+            } else if (type == "cloth") {
+                //服装
+                fashion_start(main_pid);
+            } else if (type == "mall") {
+                //百货
+                mall_start(main_pid);
+            }
+        }
+    }
+})(window, jQuery);
