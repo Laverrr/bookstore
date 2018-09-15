@@ -7,7 +7,7 @@
 技术总结：
 前端：html css js jQuery bootstrap
 
-后台：
+后台：<br>
   控制器：springMVC 
   Dependence Injection:spring
   ORM:mybatis
