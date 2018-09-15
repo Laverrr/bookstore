@@ -6,16 +6,11 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
-<%
-    String path = request.getContextPath();
-    String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
-%>
+
 <html>
 <head>
     <meta charset="utf-8">
     <title>BOOK HOUSE后台管理系统登录登陆界面</title>
-    <meta name="keywords" content="后台登陆页面模板,后台登录界面html,后台登录模板,后台登录页面html,后台管理系统后台登录模板">
-    <meta name="description" content="cssmoban提供后台管理系统登录界面html模板学习和下载">
     <meta name="viewport" content="width=device-width">
     <link href="../css/base.css" rel="stylesheet" type="text/css">
     <link href="../css/login.css" rel="stylesheet" type="text/css">

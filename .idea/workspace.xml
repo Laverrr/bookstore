@@ -8,32 +8,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="746f3667-af67-4fe8-a3d4-e5120a2ca057" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/head.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/back-head.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/comment.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/comment.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/order.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/order.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/product-list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/product-list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/product-view.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/product-view.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/register.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/register.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/shopping-result.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/shopping-result.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/shopping.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/shopping.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/update-pwd.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/update-pwd.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/update.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/update.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/user-order.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/user-order.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/comment.jsp" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/comment.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/index.jsp" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/login.jsp" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/order.jsp" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/order.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/product-list.jsp" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/product-list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/product-view.jsp" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/product-view.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/register.jsp" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/register.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/shopping-result.jsp" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/shopping-result.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/shopping.jsp" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/shopping.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/update-pwd.jsp" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/update-pwd.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/update.jsp" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/update.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/user-order.jsp" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/user-order.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/order-modify.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/order-modify.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/order.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/order.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/product-add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/product-add.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/product-modify.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/product-modify.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/product.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/product.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/user-add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/user-add.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/user-modify.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/user-modify.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/user.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/user.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/head.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/head.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/manage/index.jsp" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/manage/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/manage/login.jsp" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/manage/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/manage/order-modify.jsp" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/manage/order-modify.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/manage/order.jsp" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/manage/order.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/manage/product-add.jsp" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/manage/product-add.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/manage/product-modify.jsp" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/manage/product-modify.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/manage/product.jsp" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/manage/product.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/manage/user-add.jsp" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/manage/user-add.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/manage/user-modify.jsp" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/manage/user-modify.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/manage/user.jsp" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/manage/user.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,91 +55,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/register.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-486">
-              <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user-order.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/user-order.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="783">
-              <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user-modify.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/user-modify.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user-add.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/user-add.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="product-modify.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/product-modify.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2325">
-              <caret line="88" column="25" lean-forward="false" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="head.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/head.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="156">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -151,8 +68,88 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-594">
-              <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="11" />
+            <state relative-caret-position="27">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/order.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="66" column="100" lean-forward="false" selection-start-line="66" selection-start-column="100" selection-end-line="66" selection-end-column="100" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order-modify.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/order-modify.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/product.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="53" column="87" lean-forward="true" selection-start-line="53" selection-start-column="87" selection-end-line="53" selection-end-column="87" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product-add.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/product-add.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product-modify.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/product-modify.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/user.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user-add.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/user-add.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user-modify.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/user-modify.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="85" column="28" lean-forward="true" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -199,10 +196,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext_dao.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/base.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/product-modify.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/laver/bookstore/service/impl/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laver/bookstore/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/laver/bookstore/controller/GuideController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laver/bookstore/service/IBookService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laver/bookstore/service/impl/BookService.java" />
@@ -226,9 +221,19 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/update.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/update-pwd.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/user-order.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/head.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/head.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/back-head.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/user.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/user-add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/product-modify.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/product-add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/order-modify.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/product.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/order.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/user-modify.jsp" />
       </list>
     </option>
   </component>
@@ -426,36 +431,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bookstore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bookstore Maven Webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="front" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1208,10 +1183,18 @@
       <workItem from="1536990086115" duration="2668000" />
       <workItem from="1536999340526" duration="93000" />
     </task>
+    <task id="LOCAL-00001" summary="update head.html">
+      <created>1537023920163</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1537023920163</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53902000" />
+    <option name="totallyTimeSpent" value="54565000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1240,13 +1223,13 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26868907" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60737526" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6062907" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08577633" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23644252" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27657267" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22334754" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
@@ -1293,6 +1276,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update head.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="update head.html" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="6" />
@@ -1304,34 +1291,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5724">
-          <caret line="212" column="51" lean-forward="false" selection-start-line="212" selection-start-column="51" selection-end-line="212" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laver/bookstore/service/ICartService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laver/bookstore/domain/Cart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laver/bookstore/service/IBookService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="24" column="52" lean-forward="false" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/laver/bookstore/util/Constant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -1409,20 +1368,6 @@
         <state relative-caret-position="453">
           <caret line="57" column="25" lean-forward="true" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/order-modify.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/order.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1512,52 +1457,52 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1537023837380" expanded="true" signature="103985:104027" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="103985:104045" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="103985:104058" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="103985:104073" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="104108:107074" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="104121:107059" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="104175:104576" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="104194:104561" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="104317:104541" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="104357:104507" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="104378:104485" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="104626:104942" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="104645:104927" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="104722:104907" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="104762:104873" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="104783:104851" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="104993:105258" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="105012:105243" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="105045:105223" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="105085:105189" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="105106:105167" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="105301:105607" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="105320:105592" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="105394:105572" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="105434:105538" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="105455:105516" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="105658:105977" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="105677:105962" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="105757:105942" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="105797:105908" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="105818:105886" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="106012:106318" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="106031:106303" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="106105:106283" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="106145:106249" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="106166:106227" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="106370:106732" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="106389:106717" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="106512:106697" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="106552:106663" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="106573:106641" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="106780:107045" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="106799:107030" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="106832:107010" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="106872:106976" ph="..." />
-            <marker date="1537023837380" expanded="true" signature="106893:106954" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="103098:103140" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="103098:103158" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="103098:103171" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="103098:103186" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="103221:106187" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="103234:106172" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="103288:103689" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="103307:103674" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="103430:103654" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="103470:103620" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="103491:103598" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="103739:104055" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="103758:104040" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="103835:104020" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="103875:103986" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="103896:103964" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="104106:104371" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="104125:104356" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="104158:104336" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="104198:104302" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="104219:104280" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="104414:104720" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="104433:104705" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="104507:104685" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="104547:104651" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="104568:104629" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="104771:105090" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="104790:105075" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="104870:105055" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="104910:105021" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="104931:104999" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="105125:105431" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="105144:105416" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="105218:105396" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="105258:105362" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="105279:105340" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="105483:105845" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="105502:105830" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="105625:105810" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="105665:105776" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="105686:105754" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="105893:106158" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="105912:106143" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="105945:106123" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="105985:106089" ph="..." />
+            <marker date="1537024526468" expanded="true" signature="106006:106067" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1615,14 +1560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/product-view.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/shopping.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1671,14 +1608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1695,42 +1624,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/user-modify.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/product-view.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/user-add.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/head.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="162">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/product-modify.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/back-head.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2325">
-          <caret line="88" column="25" lean-forward="false" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
+        <state relative-caret-position="81">
+          <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-594">
-          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="11" />
+        <state relative-caret-position="27">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+        <state relative-caret-position="156">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/order.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="66" column="100" lean-forward="false" selection-start-line="66" selection-start-column="100" selection-end-line="66" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/order-modify.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/product.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="53" column="87" lean-forward="true" selection-start-line="53" selection-start-column="87" selection-end-line="53" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/product-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/product-modify.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/user.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/user-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manage/user-modify.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="85" column="28" lean-forward="true" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
           <folding />
         </state>
       </provider>

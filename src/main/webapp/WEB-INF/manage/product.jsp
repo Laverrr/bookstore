@@ -1,17 +1,11 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8" isELIgnored="false"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-%>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>后台管理 - BOOK HOUSE</title>
-<link type="text/css" rel="stylesheet" href="../css/style.css" />
-<script type="text/javascript" src="../scripts/function-manage.js"></script>
+	<jsp:include page="../static/back-head.html"/>
+
 </head>
 <body onload="getNowFormatDate()">
 <div id="header" class="wrap">
@@ -57,7 +51,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<c:forEach var="book" items="${books}">
 						<tr>
 							<td class="first w4 c">${book.bid }</td>
-					<td class="thumb"><img height="77" width="77" src="<%=basePath%>images/product/${book.image }" /><a href="../product-view.html" target="_blank">${book.bname }</a></td>
+					<td class="thumb"><img height="77" width="77" src="../../images/product/${book.image }" /><a href="../product-view.html" target="_blank">${book.bname }</a></td>
 					<td class="w1 c"><a href="modifyBookPage.do?bid=${book.bid}">修改</a> <a href="delBook.do?bid=${book.bid}">删除</a></td>
 						</tr>
 					</c:forEach>
