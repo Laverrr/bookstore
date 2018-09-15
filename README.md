@@ -6,7 +6,7 @@
 
 首页地址 http://localhost:8080/index.do
 
-后台管理地址 http://localhost:8080/backLoginPage.do# bookstore
+后台管理地址 http://localhost:8080/backLoginPage.do
 
 首页展示:
 ![首页](https://github.com/Laverrr/bookstore/blob/master/index.jpg)
