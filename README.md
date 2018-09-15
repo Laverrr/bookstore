@@ -4,6 +4,16 @@
 
 导入项目后,在resource文件夹下修改db.properties 将数据库账号和密码修改成自己MYSQL数据库的账号密码即可。
 
+技术总结：
+前端：html css js jQuery bootstrap
+
+后台：
+  控制器：springMVC 
+  Dependence Injection:spring
+  ORM:mybatis
+
+数据库：mysql
+
 首页地址 http://localhost:8080/index.do
 
 后台管理地址 http://localhost:8080/backLoginPage.do
