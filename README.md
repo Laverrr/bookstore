@@ -8,9 +8,9 @@
 前端：html css js jQuery bootstrap
 
 后台：<br>
-  控制器：springMVC 
-  Dependence Injection:spring
-  ORM:mybatis
+  控制器：springMVC <br>
+  Dependence Injection:spring<br>
+  ORM:mybatis<br>
 
 数据库：mysql
 
