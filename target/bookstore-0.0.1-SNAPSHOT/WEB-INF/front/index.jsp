@@ -106,5 +106,6 @@ $(".slider").YuxiSlider({
 	direkey:true //是否开启左右箭头方向控制
 });
 </script>
+<jsp:include page="../static/footer.html"/>
 </body>
 </html>

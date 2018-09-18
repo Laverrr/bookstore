@@ -7,6 +7,7 @@ import java.util.Set;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 
+import com.laver.bookstore.util.MD5Utils;
 import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -62,7 +63,8 @@ public class UserController {
 	public String userReg(String userName,String passWord){
 		User user=new User();
 		user.setUname(userName);
-		user.setPassword(passWord);
+		String md5Pwd = MD5Utils.encode(passWord);
+		user.setPassword(md5Pwd);
 		if(userService.userReg(user)){
 			return "success";
 		}
@@ -80,7 +82,8 @@ public class UserController {
 		}
 		User user=new User();
 		user.setUname(userName);
-		user.setPassword(passWord);
+		String md5Pwd = MD5Utils.encode(passWord);
+		user.setPassword(md5Pwd);
 		if(userService.userLogin(user).getUid()!=null){
 			User sessionUser=userService.userLogin(user);
 			sessionUser.setPassword("");

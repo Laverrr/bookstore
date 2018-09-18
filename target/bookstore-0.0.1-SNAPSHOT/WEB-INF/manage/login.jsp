@@ -59,5 +59,6 @@
     });
 
 </script>
+<jsp:include page="../static/footer.html"/>
 </body>
 </html>

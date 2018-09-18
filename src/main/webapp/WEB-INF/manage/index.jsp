@@ -21,7 +21,7 @@
 </div>
 <div id="childNav">
 	<div class="welcome wrap">
-		管理员您好，今天是<a id="time"></a>，欢迎回到管理后台。
+		管理员您好，今天是<span id="time"></span>，欢迎回到管理后台。
 	</div>
 </div>
 <div id="main" class="wrap">
@@ -53,8 +53,6 @@
 	</div>
 	<div class="clear"></div>
 </div>
-<div id="footer">
-	Copyright &copy; 2010 All Rights Reserved.
-</div>
+<jsp:include page="../static/footer.html"/>
 </body>
 </html>

@@ -71,9 +71,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	</div>
 	<div class="clear"></div>
 </div>
-<div id="footer">
-	Copyright &copy; 2010  All Rights Reserved.
-</div>
+<jsp:include page="../static/footer.html"/>
 <script>
     var validator;
     $(document).ready(function () {

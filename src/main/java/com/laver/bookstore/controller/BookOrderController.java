@@ -1,20 +1,18 @@
 package com.laver.bookstore.controller;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
-import java.util.Set;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 
+import org.apache.commons.lang3.StringUtils;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.github.pagehelper.PageHelper;
@@ -78,7 +76,7 @@ public class BookOrderController {
 	}
 	@RequestMapping("/allBookOrder")
 	public String allBookOrder(Model model,Integer pageNum,String oname,Integer oid,HttpSession session){
-		Set<Book> books=new HashSet<Book>();
+		Set<Book> books=new HashSet<>();
 		OrderDetailExample example2 = new OrderDetailExample();
 		List<OrderDetail> orderDetails = orderDetailService.selectByExample(example2);
 		for(OrderDetail od:orderDetails){
@@ -134,6 +132,42 @@ public class BookOrderController {
 		BookOrder bookOrder = bookOrderService.selectByPrimaryKey(oid);
 		model.addAttribute("bookOrder", bookOrder);
 		return "manage/order-modify";
+	}
+
+	@RequestMapping("/BookOrder")
+	public ModelAndView bookOrder(Model model, @RequestParam(value = "pageNum",defaultValue = "1") Integer pageNum, String oname, Integer oid, HttpSession session) {
+        System.out.println("pageNum:"+pageNum+"oid:"+oid+"oname:"+oname);
+		Set<Book> books = new HashSet<>();
+        BookOrderExample bookOrderExample = new BookOrderExample();
+        Criteria cri = bookOrderExample.createCriteria();
+
+        if(oid!=null){
+            cri.andOidEqualTo(oid);
+        }
+        session.setAttribute("oid",oid);
+
+        if(StringUtils.isNotEmpty(oname)){
+            cri.andOnameLike("%"+oname+"%");
+        }
+        session.setAttribute("oname",oname);
+		PageHelper.startPage(pageNum, com.laver.bookstore.util.Constant.UO_PAGE_SIZE);
+		List<BookOrder> bookOrders = bookOrderService.selectByExample(bookOrderExample);
+		for (BookOrder bookOrder : bookOrders) {
+			OrderDetailExample orderDetailExample = new OrderDetailExample();
+			OrderDetailExample.Criteria detailExampleCriteria = orderDetailExample.createCriteria();
+			detailExampleCriteria.andOrderIdEqualTo(bookOrder.getOid());
+			List<OrderDetail> orderDetails = orderDetailService.selectByExample(orderDetailExample);
+			for (OrderDetail orderDetail : orderDetails) {
+				books.add(bookService.findById(orderDetail.getBookId()));
+			}
+			bookOrder.setOrderDetails(orderDetails);
+		}
+		PageInfo<BookOrder> pageInfo = new PageInfo<>(bookOrders);
+		model.addAttribute("pageInfo", pageInfo);
+		model.addAttribute("bookOrders", bookOrders);
+		model.addAttribute("books", books);
+        System.out.println("finish");
+		return new ModelAndView("/manage/order","model",model);
 	}
 
 

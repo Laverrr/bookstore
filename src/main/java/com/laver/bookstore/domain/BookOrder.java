@@ -1,5 +1,7 @@
 package com.laver.bookstore.domain;
 
+import java.util.List;
+
 public class BookOrder {
     private Integer oid;
 
@@ -12,6 +14,8 @@ public class BookOrder {
     private String status;
 
     private Integer uid;
+
+    private List<OrderDetail> orderDetails;
 
     public Integer getOid() {
         return oid;
@@ -61,7 +65,15 @@ public class BookOrder {
         this.uid = uid;
     }
 
-	@Override
+    public List<OrderDetail> getOrderDetails() {
+        return orderDetails;
+    }
+
+    public void setOrderDetails(List<OrderDetail> orderDetails) {
+        this.orderDetails = orderDetails;
+    }
+
+    @Override
 	public String toString() {
 		return "BookOrder [oid=" + oid + ", date=" + date + ", oname=" + oname
 				+ ", adress=" + adress + ", status=" + status + ", uid=" + uid

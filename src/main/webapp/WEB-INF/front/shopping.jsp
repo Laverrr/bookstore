@@ -102,9 +102,7 @@
 		
 	</div>
 </div>
-<div id="footer">
-	Copyright &copy; 2010 All Rights Reserved.
-</div>
+<jsp:include page="../static/footer.html"/>
 <script>
     $(document).ready(function(){
         $("#submit").click(function(){

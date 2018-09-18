@@ -5,7 +5,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<jsp:include page="../static/back-head.html"/>
-
 </head>
 <body onload="getNowFormatDate()">
 <div id="header" class="wrap">
@@ -23,7 +22,8 @@
 </div>
 <div id="childNav">
 	<div class="welcome wrap">
-		管理员您好，今天是<a id="time"></a>，欢迎回到管理后台。
+		管理员您好，今天是<span id="time"></span>，欢迎回到管理后台。
+
 	</div>
 </div>
 <div id="main" class="wrap">
@@ -43,12 +43,23 @@
 		<h2>订单管理</h2>
 		<div class="manage">
 			<div class="search">
-				<form method="post" action="allBookOrder.do">
-					订单号：<input type="text" class="text" id="oid" name="oid" /> 收货人：<input type="text" class="text" id="oname" name="oname" /> <label class="ui-blue"><input type="submit" name="submit" value="查询" /></label>
+				<form id="searchInput" method="post" action="BookOrder.do" class="form-inline">
+					<div class="form-group">
+						<label for="oid">订单号：</label>
+						<%--<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">--%>
+						<input class="form-control" type="text" id="oid" name="oid" value="${sessionScope.oid}"/>
+					</div>
+					<div class="form-group">
+						<label for="oname">收货人：</label>
+						<%--<input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">--%>
+						<input class="form-control" type="text" class="text" id="oname" name="oname" value="${sessionScope.oname}"/>
+					</div>
+					<%--订单号：<input class="form-control" type="text" class="text" id="oid" name="oid" /> 收货人：<input class="form-control" type="text" class="text" id="oname" name="oname" /> --%>
+					<input type="button" onclick="submit()" class="btn btn-info" value="搜索">
 				</form>
 			</div>
 			<div class="spacer"></div>
-			<table class="list">
+			<table class="table table-hover">
 					<c:forEach items="${bookOrders}" var="bookOrder">
 						<tr>
 							<td class="first w4 c">订单号:${bookOrder.oid}</td>
@@ -58,51 +69,64 @@
 							<td class="w1 c"><a href="orderModifyPage.do?oid=${bookOrder.oid}">修改</a> <a
 								href="delserchBookOrder.do?oid=${bookOrder.oid}">删除</a></td>
 						</tr>
-							<c:forEach items="${orderDetails }" var="orderDetail">
-							<c:if test="${bookOrder.oid==orderDetail.orderId}">
+							<c:forEach items="${bookOrder.orderDetails}" var="orderDetail">
 								<c:forEach items="${books }" var="book">
 								<c:if test="${book.bid==orderDetail.bookId }">
-										<tr>
-											<td class="first w4 c">${book.bname }</td>
-											<td class="w1 c"><img height="80" width="80" src="../../images/product/${book.image}"></td>
-											<td class="w1 c">数量：${orderDetail.bookNum }</td>
-											<td>￥${book.pirce*orderDetail.bookNum }</td>
-											<td class="w1 c">${bookOrder.status }</td>
-										</tr> 
+								<tr>
+								<td class="first w4 c">${book.bname }</td>
+								<td class="w1 c"><img height="80" width="80" src="../../images/product/${book.image}"></td>
+								<td class="w1 c">数量：${orderDetail.bookNum }</td>
+								<td>￥${book.pirce*orderDetail.bookNum }</td>
+								<td class="w1 c">${bookOrder.status }</td>
+								</tr>
 								</c:if>
 								</c:forEach>
-							</c:if>
 							</c:forEach>
+							<%--<c:forEach items="${orderDetails }" var="orderDetail">--%>
+							<%--<c:if test="${bookOrder.oid==orderDetail.orderId}">--%>
+								<%--<c:forEach items="${books }" var="book">--%>
+								<%--<c:if test="${book.bid==orderDetail.bookId }">--%>
+										<%--<tr>--%>
+											<%--<td class="first w4 c">${book.bname }</td>--%>
+											<%--<td class="w1 c"><img height="80" width="80" src="../../images/product/${book.image}"></td>--%>
+											<%--<td class="w1 c">数量：${orderDetail.bookNum }</td>--%>
+											<%--<td>￥${book.pirce*orderDetail.bookNum }</td>--%>
+											<%--<td class="w1 c">${bookOrder.status }</td>--%>
+										<%--</tr> --%>
+								<%--</c:if>--%>
+								<%--</c:forEach>--%>
+							<%--</c:if>--%>
+							<%--</c:forEach>--%>
 					</c:forEach>
 				</table>
 			<div class="pager">
 					<ul class="clearfix">
 						<c:choose>
 							<c:when test="${pageInfo.hasPreviousPage}">
-								<li><a href="allBookOrder.do?pageNum=1">首页</a></li>
-								<li><a href="allBookOrder.do?pageNum=${pageInfo.prePage }">上一页</a></li>
+								<li><a class="page" href="javascript:void(0);" onclick="changePage(1)" >首页</a></li>
+								<li><a class="page" href="javascript:void(0);" onclick="changePage(${pageInfo.prePage})">上一页</a></li>
 							</c:when>
 							<c:otherwise>
-								<li>首页</li>
-								<li>上一页</li>
+								<li><span>首页</span></li>
+								<li><span>上一页</span></li>
 							</c:otherwise>
 						</c:choose>
 
 						<c:forEach var="index" begin="1" end="${pageInfo.pages }">
 
 							<li
-								<c:if test="${index==pageInfo.pageNum}">class="current"</c:if>><a
-								href="allBookOrder.do?pageNum=${index }">${index }</a></li>
+								<c:if test="${index==pageInfo.pageNum}">class="current"</c:if>>
+								<a class="page" href="javascript:void(0);" onclick="changePage(${index})">${index }</a></li>
 						</c:forEach>
 
 						<c:choose>
 							<c:when test="${pageInfo.hasNextPage}">
-								<li><a href="allBookOrder.do?pageNum=${pageInfo.nextPage }">下一页</a></li>
-								<li><a href="allBookOrder.do?pageNum=${pageInfo.pages }">尾页</a></li>
+								<li><a class="page" href="javascript:void(0);" onclick="changePage(${pageInfo.nextPage})" >下一页</a></li>
+								<li><a class="page" href="javascript:void(0);" onclick="changePage(${pageInfo.pages})">尾页</a></li>
 							</c:when>
 							<c:otherwise>
-								<li>下一页</li>
-								<li>尾页</li>
+								<li><span>下一页</span></li>
+								<li><span>尾页</span></li>
 							</c:otherwise>
 						</c:choose>
 					</ul>
@@ -111,8 +135,7 @@
 	</div>
 	<div class="clear"></div>
 </div>
-<div id="footer">
-	Copyright &copy; 2010 All Rights Reserved.
-</div>
+<jsp:include page="../static/footer.html"/>
+<script src="../../js/order.js"></script>
 </body>
 </html>

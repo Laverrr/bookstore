@@ -23,7 +23,8 @@
 </div>
 <div id="childNav">
 	<div class="welcome wrap">
-		管理员您好，今天是<a id="time"></a>，欢迎回到管理后台。
+		管理员您好，今天是<span id="time"></span>，欢迎回到管理后台。
+
 	</div>
 </div>
 <div id="main" class="wrap">
@@ -42,7 +43,7 @@
 	<div class="main">
 		<h2>商品管理</h2>
 		<div class="manage">
-			<table class="list">
+			<table class="table table-hover">
 				<tr>
 					<th>ID</th>
 					<th>商品名称</th>
@@ -64,8 +65,8 @@
 								<li><a href="manaBook.do?pageNum=${pageInfo.prePage }">上一页</a></li>
 							</c:when>
 							<c:otherwise>
-								<li>首页</li>
-								<li>上一页</li>
+								<li><span>首页</span></li>
+								<li><span>上一页</span></li>
 							</c:otherwise>
 						</c:choose>
 
@@ -82,8 +83,8 @@
 								<li><a href="manaBook.do?pageNum=${pageInfo.pages }">尾页</a></li>
 							</c:when>
 							<c:otherwise>
-								<li>下一页</li>
-								<li>尾页</li>
+								<li><span>下一页</span>下一页</li>
+								<li><span>尾页</span></li>
 							</c:otherwise>
 						</c:choose>
 					</ul>
@@ -93,8 +94,6 @@
 	
 	<div class="clear"></div>
 </div>
-<div id="footer">
-	Copyright &copy; 2010 All Rights Reserved.
-</div>
+<jsp:include page="../static/footer.html"/>
 </body>
 </html>
