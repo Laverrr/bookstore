@@ -115,7 +115,7 @@ public class BookOrderController {
 	public ModelAndView delserchBookOrder(Integer oid){
 		bookOrderService.deleteByPrimaryKey(oid);
 		orderDetailService.deleteByOid(oid);
-		return new ModelAndView("redirect:/allBookOrder.do");
+		return new ModelAndView("redirect:/BookOrder.do");
 	}
 	@RequestMapping("/orderModify")
 	public ModelAndView orderModify(Integer oid,String oname,String address,String status){
@@ -125,7 +125,7 @@ public class BookOrderController {
 		bookOrder.setAdress(address);
 		bookOrder.setStatus(status);
 		bookOrderService.update(bookOrder);
-		return new ModelAndView("redirect:/allBookOrder.do");
+		return new ModelAndView("redirect:/BookOrder.do");
 	}
 	@RequestMapping("/orderModifyPage")
 	public String orderModifyPage(Integer oid,Model model){
@@ -136,7 +136,6 @@ public class BookOrderController {
 
 	@RequestMapping("/BookOrder")
 	public ModelAndView bookOrder(Model model, @RequestParam(value = "pageNum",defaultValue = "1") Integer pageNum, String oname, Integer oid, HttpSession session) {
-        System.out.println("pageNum:"+pageNum+"oid:"+oid+"oname:"+oname);
 		Set<Book> books = new HashSet<>();
         BookOrderExample bookOrderExample = new BookOrderExample();
         Criteria cri = bookOrderExample.createCriteria();
@@ -166,7 +165,6 @@ public class BookOrderController {
 		model.addAttribute("pageInfo", pageInfo);
 		model.addAttribute("bookOrders", bookOrders);
 		model.addAttribute("books", books);
-        System.out.println("finish");
 		return new ModelAndView("/manage/order","model",model);
 	}
 

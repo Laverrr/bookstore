@@ -12,8 +12,8 @@
     <meta charset="utf-8">
     <title>BOOK HOUSE后台管理系统登录登陆界面</title>
     <meta name="viewport" content="width=device-width">
-    <link href="../css/base.css" rel="stylesheet" type="text/css">
-    <link href="../css/login.css" rel="stylesheet" type="text/css">
+    <link href="../../css/base.css" rel="stylesheet" type="text/css">
+    <link href="../../css/login.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 

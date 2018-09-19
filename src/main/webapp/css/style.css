@@ -34,13 +34,13 @@ label.error {
 .shadow .box { background:#fff; border:1px solid #bfbfbf; padding:5px; margin-right:3px; margin-bottom:3px; }
 .shadow .box .msg { text-align:center; padding:20px; }
 
-.wrap { width:960px; margin:0 auto; }
-#header { overflow:hidden; padding-top:10px; }
-#header #logo { float:left; width:120px; text-align:center; }
+.wrap { height: 80px; width:960px; margin:0 auto; }
+#header { overflow:hidden; padding-top:20px; padding-bottom: 0px; }
+#header #logo { float:left; width:200px; text-align:center; }
 #header .help { float:right; }
 #header .help a { margin:0 5px; }
 #header .help a.shopping { padding-left:18px; background:url(../images/bg.png) left -69px no-repeat; }
-#header .navbar { padding-left:120px; margin-top:30px; }
+#header .navbar { padding-left:120px; margin-top:30px; margin-bottom: 0px;}
 #header .navbar li { float:left; display:inline; margin:0 3px; background:url(../images/bg.png) right -30px no-repeat; padding-right:20px; }
 #header .navbar li a { display:block; word-spacing:5px; letter-spacing:5px; background:url(../images/bg.png) left -30px no-repeat; padding-left:20px; padding-top:4px; line-height:26px; font-size:14px; font-weight:bold; color:#105f4b; text-decoration:none; }
 #header .navbar li.current { background-position:right top; padding-right:15px; }

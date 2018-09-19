@@ -10,14 +10,14 @@
 </head>
 <body onload="getNowFormatDate()">
 <div id="header" class="wrap">
-	<div id="logo"><img src="../images/logo.gif" /></div>
+	<div id="logo"><img src="../../images/logo.gif" /></div>
 	<div class="help"><a href="index.do">返回前台页面</a></div>
 	<div class="navbar">
 		<ul class="clearfix">
 			<li ><a href="mana.do">首页</a></li>
 			<li><a href="manaUser.do">用户</a></li>
 			<li class="current"><a href="manaBook.do">商品</a></li>
-			<li><a href="allBookOrder.do">订单</a></li>
+			<li><a href="BookOrder.do">订单</a></li>
 
 		</ul>
 	</div>
@@ -37,7 +37,7 @@
 				<dt>商品管理</dt>
 				<dd><em><a href="addproductPage.do">新增</a></em><a href="manaBook.do">商品管理</a></dd>
 				<dt>订单管理</dt>
-				<dd><a href="allBookOrder.do">订单管理</a></dd>
+				<dd><a href="BookOrder.do">订单管理</a></dd>
 			</dl>
 		</div>
 	</div>
