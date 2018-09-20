@@ -80,7 +80,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="button">
 				<c:if test="${book.store>0}">
 					<%--<input id="buy" type="button" name="button"  />--%>
-					<a  href="#"><img class="buyBtn" src="../../images/buy.jpg"></a>&nbsp;&nbsp;&nbsp;
+					<a id="buy" href="#"><img class="buyBtn" src="../../images/buy.jpg"></a>&nbsp;&nbsp;&nbsp;
 				<input type="hidden" id="bid" value="${book.bid}"  />&nbsp;&nbsp;&nbsp;
 				<a id="submit" href="#"><img src="../../images/cart.png"></a>
 				</c:if>

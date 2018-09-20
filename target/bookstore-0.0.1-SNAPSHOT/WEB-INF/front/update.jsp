@@ -49,7 +49,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<table class="form">
 					<tr>
 						<td class="field">用户名：</td>
-						<td><input type="text" class="text" name="uname" value="${user.uname }" readonly/></td>
+						<td><input type="text" class="form-control" name="uname" value="${user.uname }" readonly style="width:200px;"/></td>
 					</tr>
 					<tr>
 						<td class="field">性别：</td>
@@ -60,19 +60,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</tr>
 					<tr>
 						<td class="field">邮箱：</td>
-						<td><input type="text" class="text" name="email" value="${user.email }" /></td>
+						<td><input type="text" class="form-control" name="email" value="${user.email }" style="width:200px;" /></td>
 					</tr>
 					<tr>
 						<td class="field">手机号码：</td>
-						<td><input type="text" class="text" name="phone" value="${user.phone}" /></td>
+						<td><input type="text" class="form-control" name="phone" value="${user.phone}" style="width:200px;" /></td>
 					</tr>
 					<tr>
 						<td class="field">送货地址：</td>
-						<td><input type="text" class="text" name="address" value="${user.adress}" /></td>
+						<td><input type="text" class="form-control" name="address" value="${user.adress}" style="width:200px;" /></td>
 					</tr>
 					<tr>
 						<td></td>
-						<td><label class="ui-blue"><input type="submit" name="submit" value="更新" /></label></td>
+						<td><input class="btn btn-info" type="submit" name="submit" value="更新" /></td>
 					</tr>
 				</table>
 			</form>
