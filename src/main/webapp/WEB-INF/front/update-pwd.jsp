@@ -49,19 +49,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<table class="form">
 					<tr>
 						<td class="field">旧密码：</td>
-						<td><input type="password" class="text" name="password" id="password"/></td>
+						<td><input type="password" class="form-control" name="password" id="password" style="width:200px;"/></td>
 					</tr>
 					<tr>
 						<td class="field">新密码：</td>
-						<td><input type="password" class="text" name="newPassword" id="newPassword"/></td>
+						<td><input type="password" class="form-control" name="newPassword" id="newPassword" style="width:200px;"/></td>
 					</tr>
 					<tr>
 						<td class="field">再次输入新密码：</td>
-						<td><input type="password" class="text" name="rePassword" /></td>
+						<td><input type="password" class="form-control" name="rePassword" style="width:200px;" /></td>
 					</tr>
 					<tr>
 						<td></td>
-						<td><label class="ui-blue"><input type="submit" name="submit" id="submit" value="更新" /></label></td>
+						<td><input class="btn btn-info" type="submit" name="submit" id="submit" value="更新" /></td>
 					</tr>
 				</table>
 			</form>
