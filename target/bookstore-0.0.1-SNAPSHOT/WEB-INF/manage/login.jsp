@@ -22,8 +22,8 @@
         <div class="logo"></div>
         <div class="login_form">
             <div class="user">
-                <input class="text_value" value="" name="username" type="text">
-                <input class="text_value" value="" name="password" type="password">
+                <input class="text_value"  name="username" type="text" style="width:245px;height:50px;" />
+                <input class="text_value"  name="password" type="password" style="width:245px;height:50px;"/>
             </div>
             <button class="button" id="submit" type="submit">登录</button>
         </div>
@@ -59,6 +59,5 @@
     });
 
 </script>
-<jsp:include page="../static/footer.html"/>
 </body>
 </html>

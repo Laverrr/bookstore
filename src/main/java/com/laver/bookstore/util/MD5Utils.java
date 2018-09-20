@@ -9,6 +9,10 @@ public class MD5Utils {
 
     private static final String salt = "(*%213&)()fdskfj2136";
 
+    public static void main(String[] args) {
+        System.out.println(encode("123"));
+    }
+
     /**
      * 可以把一段文字转换为MD
      * Can convert a file to MD5

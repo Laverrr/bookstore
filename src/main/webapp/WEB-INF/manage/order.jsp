@@ -61,7 +61,7 @@
 			<div class="spacer"></div>
 			<table class="table table-hover">
 					<c:forEach items="${bookOrders}" var="bookOrder">
-						<tr>
+						<tr class="active">
 							<td class="first w4 c">订单号:${bookOrder.oid}</td>
 							<td class="w1 c">${bookOrder.date}</td>
 							<td class="w1 c">收货人:${bookOrder.oname}</td>

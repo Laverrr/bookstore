@@ -16,7 +16,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<div class="help">
 		<a href="cartPage.do" class="shopping">查看购物车</a>
 		<c:if test="${sessionScope.user!=null}"><a href="userOrder.do?uid=${sessionScope.user.uid}">我的订单</a>&nbsp;用户:${sessionScope.user.uname}&nbsp;&nbsp;<a href="updateUserPage.do">更新个人信息</a><a href="updatePwdPage.do">修改密码</a><a href="logout.do">注销</a></c:if>
-		<c:if test="${sessionScope.user==null}"><a href="login.do">登录</a><a href="reg.do">注册</a></c:if>
+		<c:if test="${sessionScope.user==null}">
+			<button type="button" class="btn btn-default" onclick="window.location.href='login.do'">登陆</button>
+			<button type="button" class="btn btn-default" onclick="window.location.href='reg.do'">注册</button>
+		</c:if>
 	</div>
 	<div class="navbar">
 		<ul class="clearfix">
