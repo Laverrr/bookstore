@@ -34,7 +34,7 @@ label.error {
 .shadow .box { background:#fff; border:1px solid #bfbfbf; padding:5px; margin-right:3px; margin-bottom:3px; }
 .shadow .box .msg { text-align:center; padding:20px; }
 
-.wrap { height: 80px; width:960px; margin:0 auto; }
+.wrap { width:960px; margin:0 auto; }
 #header { overflow:hidden; padding-top:20px; padding-bottom: 0px; }
 #header #logo { float:left; width:200px; text-align:center; }
 #header .help { float:right; }
@@ -144,6 +144,7 @@ ul.product li dl dd.price { color:#c30; font-weight:bold; }
 
 #product .infos .thumb { float:left; width:320px; text-align:center; }
 #product .infos .buy { float:right; width:440px; line-height:40px; }
+#product .infos .buyBtn {  width:134px; height:36px; }
 #product .infos .buy .price { color:#c00; font-weight:bold; font-size:24px; }
 #product .infos .buy .button { border:1px solid #ffefd2; padding:10px; background:#fff8e7; margin:20px auto; text-align:center; }
 #product .infos .buy .button input { border:0; margin:0 10px; background:url(../images/bg.png) left -176px; height:35px; width:144px; cursor:pointer; }

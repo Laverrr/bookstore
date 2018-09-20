@@ -9,41 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <head>
 	<jsp:include page="../static/head.html"/>
 
-<script type="text/javascript">
-		$(function(){
-		$("#submit").click(function(){
-		var number = $("#number").val();
-		var bid = $("#bid").val();		
-		/* addGoodsInCart?bid=${book.bid}&number=" */
-		$.post("addGoodsInCart.do",{"number":number,"bid":bid},function(){
-			alert("成功添加入购物车");
-				});
-			})		
-		})
-		$(function(){
-		$("#buy").click(function(){
-		var number = $("#number").val();
-		var bid = $("#bid").val();		
-		/* addGoodsInCart?bid=${book.bid}&number=" */
-		$.post("addGoodsInCart.do",{"number":number,"bid":bid},function(){
-			window.location.href="cartPage.do";
-				});
-			})		
-		})
-	
-	function addNum() {
-		var num = parseInt(document.getElementById("number").value);
-		if (num < 100) {
-			document.getElementById("number").value = ++num;
-		}
-	}
-	function subNum() {
-		var num = parseInt(document.getElementById("number").value);
-		if (num > 1) {
-			document.getElementById("number").value = --num;
-		}
-	}
-</script>
+
 </head>
 <body>
 <div id="header" class="wrap">
@@ -105,12 +71,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<p>出版社：${book.printer}</p>
 				<p>出版日期：${dateStr}</p>
 				<p>库　存：${book.store}</p>
-				<p>购买数量：<span id="sub" onclick="subNum();">-</span><input type="text" id="number" name="number" value="1" size="2" readonly/><span id="add" onclick="addNum();">+</span></p>
+				<p>购买数量：<span id="sub" onclick="subNum();"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></span>&nbsp;
+					<input style="height: 25px; width:25px;"  id="number" name="number"  value="1" size="2" readonly/>&nbsp;
+					<span id="add" onclick="addNum();"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></span></p>
 				<div class="button">
 				<c:if test="${book.store>0}">
-					<input id="buy" type="button" name="button"  />
-				<input type="hidden" id="bid" value="${book.bid}"  />
-				<a id="submit" href="#"><img src="images/cart.png"></a>
+					<%--<input id="buy" type="button" name="button"  />--%>
+					<a  href="#"><img class="buyBtn" src="../../images/buy.jpg"></a>&nbsp;&nbsp;&nbsp;
+				<input type="hidden" id="bid" value="${book.bid}"  />&nbsp;&nbsp;&nbsp;
+				<a id="submit" href="#"><img src="../../images/cart.png"></a>
 				</c:if>
 				<c:if test="${book.store==0}">
 					<img src="images/null.png">
@@ -184,6 +153,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<div class="clear"></div>
 </div>
 <jsp:include page="../static/footer.html"/>
+<script src="../../js/product.js"></script>
 </body>
 </html>
 

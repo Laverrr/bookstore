@@ -21,11 +21,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<div class="navbar">
 		<ul class="clearfix">
 			<li class="current"><a href="index.do">首页</a></li>
-			<div class="search">
-				<form method="post" action="productList.do">
-					 查找书籍：<input type="text" class="text" name="key" placeholder="请输入商品关键字"  /> <label class="ui-blue"><input type="submit" name="submit" value="搜索" /></label>
-				</form>
-			</div>
+
 		</ul>
 	</div>
 </div>
@@ -46,17 +42,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<h1>欢迎登陆BOOK HOUSE</h1>
 			<form id="loginForm">
 				<table>
+
 					<tr>
+
 						<td class="field">用户名：</td>
-						<td><input class="text" type="text" name="userName" id="userName"/></td>
+						<td><input class="text form-control" type="text" name="userName" id="userName"/></td>
 					</tr>
 					<tr>
 						<td class="field">登录密码：</td>
-						<td><input class="text" type="password" name="passWord" id="passWord" /></td>
+						<td>
+							<input class="text form-control" type="password" name="passWord" id="passWord" />
+						</td>
 					</tr>
 					<tr>
 						<td></td>
-						<td><label class="ui-green"><input type="submit" id="submit" value="立即登录" /></label></td>
+						<td><input class="btn btn-success" type="submit" id="submit" value="登录" /></td>
 					</tr>
 				</table>
 			</form>

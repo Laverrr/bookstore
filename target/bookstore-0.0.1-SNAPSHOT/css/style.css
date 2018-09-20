@@ -35,12 +35,12 @@ label.error {
 .shadow .box .msg { text-align:center; padding:20px; }
 
 .wrap { width:960px; margin:0 auto; }
-#header { overflow:hidden; padding-top:10px; }
-#header #logo { float:left; width:120px; text-align:center; }
+#header { overflow:hidden; padding-top:20px; padding-bottom: 0px; }
+#header #logo { float:left; width:200px; text-align:center; }
 #header .help { float:right; }
 #header .help a { margin:0 5px; }
 #header .help a.shopping { padding-left:18px; background:url(../images/bg.png) left -69px no-repeat; }
-#header .navbar { padding-left:120px; margin-top:30px; }
+#header .navbar { padding-left:120px; margin-top:30px; margin-bottom: 0px;}
 #header .navbar li { float:left; display:inline; margin:0 3px; background:url(../images/bg.png) right -30px no-repeat; padding-right:20px; }
 #header .navbar li a { display:block; word-spacing:5px; letter-spacing:5px; background:url(../images/bg.png) left -30px no-repeat; padding-left:20px; padding-top:4px; line-height:26px; font-size:14px; font-weight:bold; color:#105f4b; text-decoration:none; }
 #header .navbar li.current { background-position:right top; padding-right:15px; }
@@ -144,6 +144,7 @@ ul.product li dl dd.price { color:#c30; font-weight:bold; }
 
 #product .infos .thumb { float:left; width:320px; text-align:center; }
 #product .infos .buy { float:right; width:440px; line-height:40px; }
+#product .infos .buyBtn {  width:134px; height:36px; }
 #product .infos .buy .price { color:#c00; font-weight:bold; font-size:24px; }
 #product .infos .buy .button { border:1px solid #ffefd2; padding:10px; background:#fff8e7; margin:20px auto; text-align:center; }
 #product .infos .buy .button input { border:0; margin:0 10px; background:url(../images/bg.png) left -176px; height:35px; width:144px; cursor:pointer; }

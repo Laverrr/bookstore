@@ -21,11 +21,7 @@
 	<div class="navbar">
 		<ul class="clearfix">
 			<li class="current"><a href="index.do">首页</a></li>
-			<div class="search">
-				<form method="post" action="productList.do">
-					 查找书籍：<input type="text" class="text" name="key" placeholder="请输入商品关键字"  /> <label class="ui-blue"><input type="submit" name="submit" value="搜索" /></label>
-				</form>
-			</div>
+
 		</ul>
 	</div>
 </div>
@@ -52,19 +48,19 @@
 				<table>
 					<tr>
 						<td class="field">用户名：</td>
-						<td><input class="text" type="text" name="userName" id="userName" /></td>
+						<td><input class="text form-control" type="text" name="userName" id="userName" /></td>
 					</tr>
 					<tr>
 						<td class="field">登录密码：</td>
-						<td><input class="text" type="password" id="passWord" name="passWord"  /></td>
+						<td><input class="text form-control" type="password" id="passWord" name="passWord"  /></td>
 					</tr>
 					<tr>
 						<td class="field">确认密码：</td>
-						<td><input class="text" type="password" name="rePassWord"  /></td>
+						<td><input class="text form-control" type="password" name="rePassWord"  /></td>
 					</tr>
 					<tr>
 						<td></td>
-						<td><label class="ui-green"><input type="submit" id="submit" value="提交注册" /></label></td>
+						<td><input class="btn btn-info" type="submit" id="submit" value="注册" /></td>
 					</tr>
 				</table>
 			</form>
