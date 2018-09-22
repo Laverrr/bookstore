@@ -44,7 +44,7 @@
 		<h2>商品管理</h2>
 		<div class="manage">
 			<table class="table table-hover">
-				<tr>
+				<tr class="active">
 					<th>ID</th>
 					<th>商品名称</th>
 					<th>操作</th>

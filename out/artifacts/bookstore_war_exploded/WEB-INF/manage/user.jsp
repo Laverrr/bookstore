@@ -44,7 +44,7 @@
 		<h2>用户管理</h2>
 		<div class="manage">
 				<table class="table table-hover">
-					<tr>
+					<tr class="active">
 						<th>ID</th>
 						<th>姓名</th>
 						<th>性别</th>
