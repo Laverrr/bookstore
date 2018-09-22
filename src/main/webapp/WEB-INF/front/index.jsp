@@ -7,6 +7,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+	<link rel="shortcut icon" href="../static/favicon.ico" />
 	<jsp:include page="../static/head.html"/>
 </head>
 <body>
@@ -21,14 +22,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</c:if>
 	</div>
 	<div class="navbar">
-		<ul class="clearfix">
-			<li class="current"><a href="index.do">首页</a></li>
-			<div class="search">
-				<form method="post" action="productList.do">
-					 查找书籍：<input  type="text" class="text" name="key" placeholder="请输入商品关键字"  /> <input class="btn btn-info" type="submit" name="submit" value="搜索" />
-				</form>
-			</div>
-		</ul>
+		<button type="button" onclick="window.location.href='index.do'" class="btn btn-warning btn-lg ">首页</button>
+		<div class="search">
+			<form method="post" action="productList.do">
+				查找书籍：<input  type="text" class="text" name="key" placeholder="请输入商品关键字"  /> <input class="btn btn-info" type="submit" name="submit" value="搜索" />
+			</form>
+		</div>
 	</div>
 </div>
 <div id="childNav">
@@ -98,17 +97,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </div>
 <script src="js/jquery.min.js"></script>
 <script src="js/YuxiSlider.jQuery.min.js"></script>
-<script>
-$(".slider").YuxiSlider({
-	width:800, //容器宽度
-	height:450, //容器高度
-	control:$('.control'), //绑定控制按钮
-	during:4000, //间隔4秒自动滑动
-	speed:800, //移动速度0.8秒
-	mousewheel:true, //是否开启鼠标滚轮控制
-	direkey:true //是否开启左右箭头方向控制
-});
-</script>
+<script src="../../js/index.js"></script>
 <jsp:include page="../static/footer.html"/>
 </body>
 </html>

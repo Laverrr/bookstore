@@ -22,10 +22,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</c:if>
 	</div>
 	<div class="navbar">
-		<ul class="clearfix">
-			<li class="current"><a href="index.do">首页</a></li>
-
-		</ul>
+		<button type="button" onclick="window.location.href='index.do'" class="btn btn-warning btn-lg ">首页</button>
+		<div class="search">
+			<form method="post" action="productList.do">
+				查找书籍：<input  type="text" class="text" name="key" placeholder="请输入商品关键字"  /> <input class="btn btn-info" type="submit" name="submit" value="搜索" />
+			</form>
+		</div>
 	</div>
 </div>
 <div id="childNav">
@@ -71,64 +73,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<div class="clear"></div>
 </div>
 <jsp:include page="../static/footer.html"/>
-<script>
-    var validator;
-    $(document).ready(function () {
-        $.validator.setDefaults({
-            //debug: true
-        });
-
-        validator = $("#Form").validate({
-            rules: {
-                password: {
-                    required: true,
-                },
-                newPassword: {
-                    required: true,
-                },
-                rePassword: {
-                	required: true,
-                    equalTo: "#newPassword"
-                }
-            },
-            messages: {
-                password: {
-                     required: "必须填写旧密码",
-                },
-                newPassword: {
-                    required: "必须填写密码",
-                },
-                rePassword: {
-            	    required: "必须填写确认密码",
-                    equalTo: "两次输入的密码不一致"
-                }
-            }
-        });
-    });
- $(document).ready(function(){
-	$("#submit").click(function(){
-		$.post("updatePwd.do",{
-			uid:$("#uid").val(),
-			password:$("#password").val(),
-			newPassword:$("#newPassword").val()
-		},
-		function(data){
-			if(data=='success'){
-				alert("修改密码成功");
-			}
-			if(data=='false'){
-				alert("旧密码输入有误");
-			}
-			if(data=='pwdEmpty'){
-				alert("密码不能为空");
-			}
-			if(data=='newEmpty'){
-				alert("确认密码不能为空");
-			}
-		});
-	});
-}); 
-</script>
+<script src="../../js/update-pwd.js"></script>
 </body>
 </html>
 

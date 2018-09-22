@@ -9,25 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <head>
 	<jsp:include page="../static/head.html"/>
 
-<script type="text/javascript">
-	/* $(function(){
-		$("#submit").click(function(){
-		var uid = $("#uid").val();
-		var oname = $("#oname").val();
-		var oaddress = $("#oaddress").val();		
-		/* addGoodsInCart?bid=${book.bid}&number=" 
-		$.post("addBookOrder.do",{"uid":uid,"oname":oname,"oaddress":oaddress},function(){
-			window.location.href="shoppingResult.do";
-				});
-			})		
-		}) */
-		
-	$(document).ready(function() {
-		$("#submit").click(function() {
-			$("#orderForm").submit();
-		});
-	});
-</script>
+<script src="../../js/order.js"></script>
 </head>
 <body>
 <div id="header" class="wrap">
@@ -41,14 +23,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</c:if>
 	</div>
 	<div class="navbar">
-		<ul class="clearfix">
-			<li class="current"><a href="index.do">首页</a></li>
-			<div class="search">
-				<form method="post" action="productList.do">
-					查找书籍：<input  type="text" class="text" name="key" placeholder="请输入商品关键字"  /> <input class="btn btn-info" type="submit" name="submit" value="搜索" />
-				</form>
-			</div>
-		</ul>
+		<button type="button" onclick="window.location.href='index.do'" class="btn btn-warning btn-lg ">首页</button>
+		<div class="search">
+			<form method="post" action="productList.do">
+				查找书籍：<input  type="text" class="text" name="key" placeholder="请输入商品关键字"  /> <input class="btn btn-info" type="submit" name="submit" value="搜索" />
+			</form>
+		</div>
 	</div>
 </div>
 <div id="childNav">

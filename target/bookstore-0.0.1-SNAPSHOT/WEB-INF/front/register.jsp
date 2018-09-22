@@ -16,16 +16,18 @@
 	<div class="help">
 		<a href="cartPage.do" class="shopping">查看购物车</a>
 		<c:if test="${sessionScope.user!=null}"><a href="userOrder.do?uid=${sessionScope.user.uid}">我的订单</a>&nbsp;用户:${sessionScope.user.uname}&nbsp;&nbsp;<a href="updateUserPage.do">更新个人信息</a><a href="updatePwdPage.do">修改密码</a><a href="logout.do">注销</a></c:if>
-        <c:if test="${sessionScope.user==null}">
-            <button type="button" class="btn btn-default" onclick="window.location.href='login.do'">登陆</button>
-            <button type="button" class="btn btn-default" onclick="window.location.href='reg.do'">注册</button>
-        </c:if>
+		<c:if test="${sessionScope.user==null}">
+			<button type="button" class="btn btn-default" onclick="window.location.href='login.do'">登陆</button>
+			<button type="button" class="btn btn-default" onclick="window.location.href='reg.do'">注册</button>
+		</c:if>
 	</div>
 	<div class="navbar">
-		<ul class="clearfix">
-			<li class="current"><a href="index.do">首页</a></li>
-
-		</ul>
+		<button type="button" onclick="window.location.href='index.do'" class="btn btn-warning btn-lg ">首页</button>
+		<div class="search">
+			<form method="post" action="productList.do">
+				查找书籍：<input  type="text" class="text" name="key" placeholder="请输入商品关键字"  /> <input class="btn btn-info" type="submit" name="submit" value="搜索" />
+			</form>
+		</div>
 	</div>
 </div>
 <div id="childNav">
@@ -72,57 +74,6 @@
 	<div class="clear"></div>
 </div>
 <jsp:include page="../static/footer.html"/>
-<script>
-    var validator;
-    $(document).ready(function () {
-        $.validator.setDefaults({
-            //debug: true
-        });
-
-        validator = $("#regForm").validate({
-            rules: {
-                userName: {
-                    required: true
-                },
-                passWord: {
-                    required: true
-                },
-                rePassWord: {
-                	required: true,
-                    equalTo: "#passWord"
-                }
-            },
-            messages: {
-                userName: {
-                     required: "必须填写用户名"
-                },
-                passWord: {
-                    required: "必须填写密码"
-                },
-                rePassWord: {
-            	    required: "必须填写确认密码",
-                    equalTo: "两次输入的密码不一致"
-                }
-            }
-        });
-    });
-    $(document).ready(function(){
-        $("#submit").click(function(){
-            $.post("userReg.do",{
-                    userName:$("#userName").val(),
-                    passWord:$("#passWord").val()
-                },
-                function(data){
-                    if(data=='success'){
-                        alert("注册成功，请登陆。");
-                        window.location.href="login.do";
-                    }
-                    if(data=='false'){
-                        alert("用户名已存在");
-                    }
-                });
-        });
-    });
-</script>
+<script src="../../js/register.js"></script>
 </body>
 </html>

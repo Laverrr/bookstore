@@ -8,7 +8,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<jsp:include page="../static/head.html"/>
-
 </head>
 <body>
 <div id="header" class="wrap">
@@ -22,10 +21,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</c:if>
 	</div>
 	<div class="navbar">
-		<ul class="clearfix">
-			<li class="current"><a href="index.do">首页</a></li>
-
-		</ul>
+		<button type="button" onclick="window.location.href='index.do'" class="btn btn-warning btn-lg ">首页</button>
+		<div class="search">
+			<form method="post" action="productList.do">
+				查找书籍：<input  type="text" class="text" name="key" placeholder="请输入商品关键字"  /> <input class="btn btn-info" type="submit" name="submit" value="搜索" />
+			</form>
+		</div>
 	</div>
 </div>
 <div id="childNav">
@@ -82,52 +83,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<div class="clear"></div>
 </div>
 <jsp:include page="../static/footer.html"/>
-<script>
-    var validator;
-    $(document).ready(function () {
-        $.validator.setDefaults({
-        });
-
-        validator = $("#Form").validate({
-            rules: {
-                uname: {
-                    required: true
-                },
-                phone: {
-                    required: true,
-                    minlength: 11,
-                    maxlength: 11
-                },
-                email: {
-                    required: true,
-                    email:true
-                },
-                address: {
-                    required: true
-                }
-            },
-            messages: {
-                uname: {
-                    required: "必须填写用户名"
-                },
-                phone: {
-                    required: "必须填写电话",
-                    minlength: "电话号码长度不正确",
-                    maxlength: "电话号码长度不正确"
-                },
-                email: {
-                    required: "必须填写邮箱",
-                    email:"邮箱格式有误"
-                },
-                address: {
-                    required: "必须填写送货地址"
-                }
-            }
-        });
-
-    });
-
-</script>
+<script src="../../js/update.js"></script>
 </body>
 </html>
 

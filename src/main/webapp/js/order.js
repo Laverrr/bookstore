@@ -24,4 +24,20 @@ function changePage(page){
 //         });
 //     }
 // });
+/* $(function(){
+		$("#submit").click(function(){
+		var uid = $("#uid").val();
+		var oname = $("#oname").val();
+		var oaddress = $("#oaddress").val();
+		/* addGoodsInCart?bid=${book.bid}&number="
+		$.post("addBookOrder.do",{"uid":uid,"oname":oname,"oaddress":oaddress},function(){
+			window.location.href="shoppingResult.do";
+				});
+			})
+		}) */
 
+$(document).ready(function() {
+    $("#submit").click(function() {
+        $("#orderForm").submit();
+    });
+});

@@ -23,14 +23,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</c:if>
 	</div>
 	<div class="navbar">
-		<ul class="clearfix">
-			<li class="current"><a href="index.do">首页</a></li>
-			<div class="search">
-				<form method="post" action="productList.do">
-					查找书籍：<input  type="text" class="text" name="key" placeholder="请输入商品关键字"  /> <input class="btn btn-info" type="submit" name="submit" value="搜索" />
-				</form>
-			</div>
-		</ul>
+		<button type="button" onclick="window.location.href='index.do'" class="btn btn-warning btn-lg ">首页</button>
+		<div class="search">
+			<form method="post" action="productList.do">
+				查找书籍：<input  type="text" class="text" name="key" placeholder="请输入商品关键字"  /> <input class="btn btn-info" type="submit" name="submit" value="搜索" />
+			</form>
+		</div>
 	</div>
 </div>
 <div id="childNav">
@@ -80,7 +78,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="button">
 				<c:if test="${book.store>0}">
 					<%--<input id="buy" type="button" name="button"  />--%>
-					<a  href="#"><img class="buyBtn" src="../../images/buy.jpg"></a>&nbsp;&nbsp;&nbsp;
+					<a id="buy" href="#"><img class="buyBtn" src="../../images/buy.jpg"></a>&nbsp;&nbsp;&nbsp;
 				<input type="hidden" id="bid" value="${book.bid}"  />&nbsp;&nbsp;&nbsp;
 				<a id="submit" href="#"><img src="../../images/cart.png"></a>
 				</c:if>
