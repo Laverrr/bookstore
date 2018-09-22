@@ -1,0 +1,44 @@
+/* footer */
+.footer{border-top: 2px solid #ff2832;margin-top: 15px;background-color: #fff;clear: both;}
+.footer_pic_new{background-color: #fafafa;border-bottom:1px solid #ebebeb;width:100%;_width:expression(this.scrollWidth < 960 ? "960px" : "auto");min-width: 960px;}
+.footer_pic_new .footer_pic_new_inner{width: 940px;margin: 0 auto;height: 68px;padding: 5px 0 5px 30px;}
+.footer_pic_new .footer_pic_new_inner a{display: block;height: 52px;width: 187px;float: left;padding: 7px 0 7px 48px;}
+.footer_pic_new .footer_pic_new_inner a span{text-indent: -9999px;display: block;width: 138px;height: 52px;background: url(http://img62.ddimg.cn/upload_img/00459/home/footer_bg.png) 0 0 no-repeat;font-size: 0;line-height: 0;cursor: pointer;}
+.footer_pic_new .footer_pic_new_inner a.footer_pic01{border-left-width: 0;}
+.footer_pic_new .footer_pic_new_inner a.footer_pic02 span{background-position: 0 -51px;}
+.footer_pic_new .footer_pic_new_inner a.footer_pic03 span{background-position: 0 -103px;}
+.footer_pic_new .footer_pic_new_inner a.footer_pic04 span{background-position: 0 -156px;}
+
+.public_footer_new{width: 920px; height: 140px;margin: 0 auto;padding-top: 30px;}
+.public_footer_new .footer_sort{width: 154px;float: left; text-align:center;}
+.public_footer_new .footer_sort .f_title{display: block;padding-left: 30px;font-size: 14px;font-family: "microsoft yahei";color: #323232;height: 36px;line-height: 36px;}
+.public_footer_new .footer_shangjia .f_title{background-position: 0px -200px;}
+.public_footer_new .footer_distribution .f_title{background-position:0px -118px;}
+.public_footer_new .footer_pay .f_title{background-position: 0px -39px;}
+.public_footer_new .footer_characteristic .f_title{background-position: 0 -79px;}
+.public_footer_new .footer_help .f_title{background-position: 0px -158px;}
+.public_footer_new .footer_sort a{text-decoration: none;color: #7d7d7d;font-size: 12px;}
+.public_footer_new .footer_sort a:hover{text-decoration: underline;color: #f44d20;}
+.public_footer_new .footer_sort ul{padding-left: 30px; list-style:none; margin:0;}
+.public_footer_new .footer_sort ul li{line-height: 20px;height: 20px;}
+.public_footer_new .footer_shangjia{width: 150px;}
+
+.footer_nav_box{border-top: 1px solid #ebebeb;width:100%;_width:expression(this.scrollWidth < 960 ? "960px" : "auto");min-width: 960px;padding: 17px 0 50px;}
+.footer_nav_box a,.footer_nav_box{color: #8c8c8c;font-size: 12px;text-decoration: none;}
+.footer_nav_box a:hover{color: #f48570;text-decoration: underline;}
+.footer_nav_box .footer_nav{text-align: center;line-height: 20px;padding-bottom: 17px;}
+.footer_nav_box .footer_nav span.sep{margin: 0 17px 0 19px;}
+.footer_nav_box .footer_copyright{line-height: 20px;text-align: center;width: 960px;margin: 0 auto;}
+.footer_nav_box .footer_copyright span.sep{margin:0 17px 0 19px;}
+.footer_nav_box .footer_icon{padding: 10px 0 0 340px;width: 640px;margin: 0 auto;height: 77px;}
+.footer_nav_box .validator,.footer_nav_box .knet{float:left;display:inline;padding:15px 5px 15px;width:135px;height:47px;}
+
+.footer_copyright {padding: 10px 0 0 0; margin: 0 auto;float: none; width: auto;text-align: center;color: #8c8c8c;}
+.footer_copyright span, .public_footer .footer_copyright a.footer_img { display: inline-block; float: none; }
+.footer_copyright a { padding: 0 4px; color: #8c8c8c;font-size: 12px;text-decoration: none;}
+.footer_copyright a:hover{color: #f48570;text-decoration: underline;}
+.footer_nav_box .footer_nav .footer_hot_search{display:inline-block;*display:inline;width:50px;position:relative}
+.footer_nav_box .footer_nav .pos_a_box{position:absolute;left:-251px;top:22px;background-color:#f48570;width:300px;border-radius:8px;text-align:center;height:14px;line-height:14px}
+.footer_nav_box .footer_nav .pos_a_box a,.footer_nav_box .footer_nav .pos_a_box a:hover,.footer_nav_box .footer_nav .pos_a_box span{padding:0 2px;color:#fff;text-decoration:none}
+.footer_nav_box .footer_nav .pos_a_box i{display:block;width:0;height:0;line-height:0;font-size:0;border-width:0 4px 4px;border-style:solid;border-color:#fff #fff #f48570 #fff;position:absolute;right:20px;top:-4px}
+

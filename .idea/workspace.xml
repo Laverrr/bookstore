@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="bookstore:war" />
+      <artifact name="bookstore:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
@@ -10,47 +10,487 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/laver/bookstore/controller/BookOrderController.java" line="90" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="746f3667-af67-4fe8-a3d4-e5120a2ca057" name="Default" comment="bootstrap enhance">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/shopping.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/update-pwd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/update.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/bookstore_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/bookstore_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/bookstore_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/bookstore_war_exploded.xml" afterDir="false" />
+    <list default="true" id="746f3667-af67-4fe8-a3d4-e5120a2ca057" name="Default" comment="bootstrap enhance x.0">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/SqlMapConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/applicationContext_dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/applicationContext_service.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/controller/BookController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/controller/BookOrderController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/controller/CartController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/controller/CommentController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/controller/GuideController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/Book.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/BookExample$Criteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/BookExample$Criterion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/BookExample$GeneratedCriteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/BookExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/BookOrder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/BookOrderExample$Criteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/BookOrderExample$Criterion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/BookOrderExample$GeneratedCriteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/BookOrderExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/Cart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/Comment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/CommentExample$Criteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/CommentExample$Criterion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/CommentExample$GeneratedCriteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/CommentExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/OrderDetail.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/OrderDetailExample$Criteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/OrderDetailExample$Criterion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/OrderDetailExample$GeneratedCriteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/OrderDetailExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/UserExample$Criteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/UserExample$Criterion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/UserExample$GeneratedCriteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/domain/UserExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/mapper/BookMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/mapper/BookOrderMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/mapper/CommentMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/mapper/OrderDetailMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/service/IBookOrderService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/service/IBookService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/service/ICartService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/service/ICommentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/service/IOrderDetailService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/service/IUserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/service/impl/BookOrderService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/service/impl/BookService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/service/impl/CartService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/service/impl/CommentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/service/impl/OrderDetailService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/service/impl/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/util/Constant.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/util/LoginFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/com/laver/bookstore/util/MD5Utils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/mapper/BookMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/mapper/BookOrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/mapper/CommentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/mapper/OrderDetailMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/springmvc_config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/front/comment.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/front/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/front/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/front/order.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/front/product-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/front/product-view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/front/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/front/shopping-result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/front/shopping.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/front/update-pwd.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/front/update.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/front/user-order.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/aspectjweaver-1.8.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/commons-dbcp-1.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/commons-lang3-3.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/commons-pool-1.5.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/jackson-core-2.8.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/jackson-core-asl-1.9.13.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/jsqlparser-0.9.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/mybatis-3.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/mybatis-spring-1.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/pagehelper-4.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/spring-aop-4.3.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/spring-aspects-4.3.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/spring-beans-4.3.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/spring-context-4.3.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/spring-core-4.3.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/spring-expression-4.3.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/spring-jdbc-4.3.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/spring-tx-4.3.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/spring-web-4.3.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/spring-webmvc-4.3.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/manage/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/manage/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/manage/order-modify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/manage/order.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/manage/product-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/manage/product-modify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/manage/product.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/manage/user-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/manage/user-modify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/manage/user.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/static/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/static/back-head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/static/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/static/head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/admin_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/buttons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/buy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/empty.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/login_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/login_button.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/login_logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/login_name_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/logo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/logo1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/null.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/orderSub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/pay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/0_tiny.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1000261995-1_l_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1001425895-1_l_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1001427595-1_l_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1002824195-1_l_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1003587395-1_l_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1003597695-1_l_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1008750358-1_l_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1008794658-1_l_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1011255005-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1012308258-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1014439795-1_l_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1016840981-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1016884836-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1021205405-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1023393535-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1032562858-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1039766560-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1040384990-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1043394608-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1045106447-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1049483908-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1055205755-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1058084686-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1062403729-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1063223308-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1068472491-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1074714586-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1078183207-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1078777248-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1084310556-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1097711927-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1117038780-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1129671575-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1135927550-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1144431592-1_l_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1148200212-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1148798576-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1164275392-1_l_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1165081550-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1165214050-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1165325550-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1169865592-1_l_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1169901092-1_l_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1183244970-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1197287235-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1198069080-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1206584707-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1210418940-1_l_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1211989381-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1224851123-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1229942186-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1237906371-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1252858235-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1255052331-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1259197947-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1261479235-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1276329458-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1282414371-1_l_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1303179406-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1308823746-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1321538429-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1330405472-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1333019137-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1337624300-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1341204437-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1341732956-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1345741481-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1348641237-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1371950775-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1380244566-1_l_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1380886635-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1390053235-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1393383037-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1393609137-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1416078100-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1422041637-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1425024737-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1425864437-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1425889637-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1453044837-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1473217940-1_l_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1473258740-1_l_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1480635793-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/1627638125612-1_d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/20053088-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/20298093-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/20499577-1_x_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/20689303-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/20837696-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/2085165003005-1_d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/20971873-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/20997545-1_x_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/2102823649889-1_d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/21035152-1_x_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/21090357-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/21112222-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/2133965755325-1_d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/22472496-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/22472949-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/22472949-1_x_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/22500622-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/22568335-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/22616096-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/22723876-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/22788660-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/22790242-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/22819334-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/22856229-1_x_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/22864990-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/22880790-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/22890905-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/22907202-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/22935553-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/2297911919352-1_d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23172414-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23274638-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23295770-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23343961-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23398718-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23445575-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23455903-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23464478-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23490646-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23537598-1_x_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23538595-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23576465-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23579654-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23655301-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23685329-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23694647-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23715237-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23716900-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23751637-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23761145-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23761948-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23822200-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23829639-1_x_8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23906335-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23920476-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23921773-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23951294-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23964981-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23978517-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/23986808-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/24007054-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/24009822-1_x_6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/24010525-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/24015513-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/24017630-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/24017630-1_x_14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/24021172-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/24022639-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/24035109-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/24039776-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/24040877-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/24059709-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/24059709-1_x_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/24105946-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/24162023-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/24168390-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/24168888-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/24171538-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/24182882-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/24185346-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/24188188-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/24195665-1_x_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/25060117-1_x_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/25068117-1_x_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/3244015840395-1_d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/4102941783158-1_d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/463785-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/5247297430957-1_d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/5575919881896-1_d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/60047684-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/60122671-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/60556166-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/60567731-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/60573468-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/60576769-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/60579352-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/60595979-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/60601822-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/60606319-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/60614424-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/60617420-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/60618028-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/60619666-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/60629642-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/60631595-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/60631787-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/60636930-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/60638150-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/618nzq.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/6585581815412-1_d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/6672141227422-1_d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/7501346304080-1_d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/7595672570162-1_d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/90.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/9149209-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/9221643-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/9231298-1_l_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/9231298-1_m_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/9231298-1_u_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/9231298-1_w_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/9231298-1_x_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/9239276-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/9304522-1_x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/9335163-1_l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/9461704076831-1_d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/9622406905460-1_d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/LoginWindow.js.下载" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/adall.min.js.下载" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/adv.js.下载" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/b.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/chat.in.js.下载" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/check_snbrowse.js.下载" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/cma.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/collect(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/collect(2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/collect(3).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/collect(4).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/collect(5).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/collect(6).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/collect(7).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/collect(8).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/collect.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/collect.js.下载" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/cpc_new.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/cpt_new.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/dd.menu-aim.js.下载" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/dis.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/erweima2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/event" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/footer_150526.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/g" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/getJS.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/header_150803.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/hothotbiaoqian.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/item.js.下载" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/js_tracker.js.下载" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/ld.js.下载" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/mqtt.chat.js.下载" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/mqtt31.js.下载" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/mvl.js.下载" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/narrow_dang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/outlets.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/pagetop2015_0827.js.下载" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/readapp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/s.js.下载" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/saved_resource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/saved_resource(1)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/saved_resource(2)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/saved_resource(3).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/saved_resource.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/shopingapp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/smart.js.下载" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/validate.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/win_login20150728.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/19_files/zh_cn.js.下载" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/26.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/27.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/28.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/29.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/31.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/32.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/33.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/34.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/35.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/36.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/37.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/38.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/39.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/40.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/41.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/42.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/43.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/images/product/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/js/YuxiSlider.jQuery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/js/jquery.validate-1.13.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/js/order.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/js/product.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/js/register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/js/shopping.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/js/update-pwd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/js/update.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/scripts/WdatePicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/scripts/calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/scripts/function-manage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/scripts/function.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/scripts/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/scripts/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/scripts/lang/zh-tw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/scripts/skin/WdatePicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/scripts/skin/datePicker.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/scripts/skin/default/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/scripts/skin/default/img.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/scripts/skin/whyGreen/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/scripts/skin/whyGreen/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/scripts/skin/whyGreen/img.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ui/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ui/do.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/buy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/label.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/woody-404.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/woody-404.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war/bookstore_war.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war/bookstore_war.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/comment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/comment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/order.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/product-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/product-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/product-view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/product-view.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/shopping-result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/shopping-result.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/shopping.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/shopping.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/update-pwd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/update-pwd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/update.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/user-order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/user-order.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laver/bookstore/controller/GuideController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laver/bookstore/controller/GuideController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/logo.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/logo.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/复件 login_logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/comment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/comment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/order.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/product-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/product-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/product-view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/product-view.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/shopping-result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/shopping-result.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/shopping.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/shopping.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/update-pwd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/update-pwd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/update.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/user-order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/user-order.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/images/logo.gif" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/images/logo.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/images/复件 login_logo.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,46 +524,48 @@
         <counts>
           <entry key="class" value="3" />
           <entry key="css" value="7" />
-          <entry key="html" value="12" />
+          <entry key="html" value="14" />
           <entry key="ico" value="2" />
-          <entry key="java" value="16" />
+          <entry key="java" value="17" />
+          <entry key="jpg" value="1" />
           <entry key="js" value="11" />
           <entry key="jsp" value="93" />
-          <entry key="xml" value="2" />
+          <entry key="png" value="2" />
+          <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
           <entry key="CSS" value="7" />
-          <entry key="HTML" value="12" />
-          <entry key="Image" value="2" />
-          <entry key="JAVA" value="16" />
+          <entry key="HTML" value="14" />
+          <entry key="Image" value="5" />
+          <entry key="JAVA" value="17" />
           <entry key="JSP" value="93" />
           <entry key="JavaScript" value="11" />
-          <entry key="XML" value="2" />
+          <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="218" />
-          <entry key="html" value="84" />
-          <entry key="java" value="643" />
+          <entry key="css" value="220" />
+          <entry key="html" value="113" />
+          <entry key="java" value="660" />
           <entry key="js" value="139" />
           <entry key="jsp" value="1229" />
-          <entry key="txt" value="41" />
-          <entry key="xml" value="2" />
+          <entry key="txt" value="45" />
+          <entry key="xml" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="218" />
-          <entry key="HTML" value="84" />
-          <entry key="JAVA" value="643" />
+          <entry key="CSS" value="220" />
+          <entry key="HTML" value="113" />
+          <entry key="JAVA" value="660" />
           <entry key="JSP" value="1229" />
           <entry key="JavaScript" value="139" />
-          <entry key="PLAIN_TEXT" value="41" />
-          <entry key="XML" value="2" />
+          <entry key="PLAIN_TEXT" value="45" />
+          <entry key="XML" value="19" />
         </counts>
       </usages-collector>
     </session>
@@ -137,14 +579,9 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+              <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/SqlMapConfig.xml">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -157,11 +594,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/favicon.ico">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/head.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="81">
@@ -170,49 +602,70 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="57" column="26" lean-forward="true" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+            <state relative-caret-position="111">
+              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/update.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/laver/bookstore/controller/GuideController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
+            <state relative-caret-position="146">
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+              <folding>
+                <element signature="e#277#278#0" expanded="true" />
+                <element signature="e#307#308#0" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
+                <element signature="e#388#389#0" expanded="true" />
+                <element signature="e#451#452#0" expanded="true" />
+                <element signature="e#482#483#0" expanded="true" />
+                <element signature="e#539#540#0" expanded="true" />
+                <element signature="e#569#570#0" expanded="true" />
+                <element signature="e#640#641#0" expanded="true" />
+                <element signature="e#674#675#0" expanded="true" />
+                <element signature="e#731#732#0" expanded="true" />
+                <element signature="e#758#759#0" expanded="true" />
+                <element signature="e#827#828#0" expanded="true" />
+                <element signature="e#864#865#0" expanded="true" />
+                <element signature="e#913#914#0" expanded="true" />
+                <element signature="e#941#942#0" expanded="true" />
+                <element signature="e#1008#1009#0" expanded="true" />
+                <element signature="e#1040#1041#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/update-pwd.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="75" column="37" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
+            <state relative-caret-position="135">
+              <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/user-order.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/images/bg.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/404.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1914">
-              <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+            <state relative-caret-position="239">
+              <caret line="59" column="49" lean-forward="true" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/update-pwd.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="55" column="3" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/images/buy.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -228,8 +681,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>\&lt;c\:forEach var\=\&quot;good\&quot; items\=\&quot;\$\{sessionScope\.cart\.goods\}\&quot;\&gt;\n\	\	\	\	\	\&lt;tr id\=\&quot;product_id_1\&quot;\&gt;\n\	\	\	\	\	\&lt;td class\=\&quot;thumb\&quot;\&gt;\&lt;img height\=\&quot;80\&quot; width\=\&quot;80\&quot; src\=\&quot;\&lt;\%\=basePath \%\&gt;images\/product\/\$\{good\.key\.image\}\&quot; \/\&gt;\&lt;a href\=\&quot;bookView\.do\?bid\=\$\{good\.key\.bid\}\&quot;\&gt;\$\{good\.key\.bname\}\&lt;\/a\&gt;\&lt;\/td\&gt;\n\	\	\	\	\	\&lt;td class\=\&quot;price\&quot; \&gt;\n\	\	\	\	\	\	\&lt;span\&gt;\￥\$\{good\.key\.pirce\}\&lt;\/span\&gt;\n\	\	\	\	\	\	\&lt;input id\=\&quot;price\$\{good\.key\.bid\}\&quot; type\=\&quot;hidden\&quot; value\=\&quot;\$\{good\.key\.pirce\}\&quot; \/\&gt;\n\	\	\	\	\	\&lt;\/td\&gt;\n\	\	\	\	\	\&lt;td class\=\&quot;number\&quot;\&gt;\n\	\	\	\	\	\	\&lt;span id\=\&quot;sub\&quot; onclick\=\&quot;sub\(\$\{good\.key\.bid\}\)\;\&quot;\&gt;\-\&lt;\/span\&gt;\&lt;input type\=\&quot;text\&quot; id\=\&quot;number\$\{good\.key\.bid\}\&quot; name\=\&quot;number\&quot; value\=\&quot;\$\{good\.value\}\&quot; size\=\&quot;2\&quot; readonly\/\&gt;\&lt;span id\=\&quot;add\&quot; onclick\=\&quot;add\(\$\{good\.key\.bid\}\)\;\&quot;\&gt;\+\&lt;\/span\&gt;\n\	\	\	\	\	\&lt;\/td\&gt;\n\	\	\	\	\	\&lt;td class\=\&quot;price\&quot;\&gt;\n\	\	\	\	\	\	\&lt;span \&gt;\￥\&lt;\/span\&gt;\n\	\	\	\	\	\	\&lt;span id\=\&quot;goodSum\$\{good\.key\.bid\}\&quot;\&gt;\$\{good\.key\.pirce\*good\.value\}\&lt;\/span\&gt;\n\	\	\	\	\	\&lt;\/td\&gt;\n\	\	\	\	\	\&lt;td class\=\&quot;delete\&quot;\&gt;\&lt;a href\=\&quot;removeGoodsFromCart\.do\?bid\=\$\{good\.key\.bid\}\&quot;\&gt;删除\&lt;\/a\&gt;\&lt;\/td\&gt;\n\	\	\	\	\	\&lt;\/tr\&gt;\n\	\	\	\	\	\&lt;\/c\:forEach\&gt;</find>
-      <find>slider</find>
       <find>&lt;%=basePath %&gt;</find>
       <find>loginForm</find>
       <find>\&lt;div id\=\&quot;footer\&quot;\&gt;\n\	Copyright \&amp;copy\; 2010 All Rights Reserved\.\n\&lt;\/div\&gt;</find>
@@ -258,6 +709,8 @@
       <find>navbar</find>
       <find>wrap</find>
       <find>search</find>
+      <find>buy.jpg</find>
+      <find>images/</find>
     </findStrings>
     <replaceStrings>
       <replace>../</replace>
@@ -266,6 +719,7 @@
       <replace>onclick=&quot;changePage(${pageInfo.pages})&quot;</replace>
       <replace>BookOrder.do</replace>
       <replace />
+      <replace>../../images/</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -274,10 +728,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/laver/bookstore/service/impl/BookService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laver/bookstore/controller/BookController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laver/bookstore/util/Constant.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/springmvc_config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/laver/bookstore/controller/CartController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laver/bookstore/util/LoginFilter.java" />
@@ -325,6 +776,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/head.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/front/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laver/bookstore/controller/GuideController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/404.html" />
       </list>
     </option>
   </component>
@@ -410,6 +864,23 @@
               <item name="bookstore Maven Webapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookstore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookstore Maven Webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bookstore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookstore Maven Webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -418,7 +889,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bookstore" type="b2602c69:ProjectViewProjectNode" />
@@ -427,7 +898,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bookstore" type="b2602c69:ProjectViewProjectNode" />
@@ -451,7 +921,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537634741291" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537636644843" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../blog" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -459,19 +929,19 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\L\Desktop\IdeaProject\bookstore Maven Webapp\src\main\webapp\images" />
       <recent name="C:\Users\L\Desktop\IdeaProject\bookstore Maven Webapp\src\main\webapp\WEB-INF\static" />
-      <recent name="C:\Users\L\Desktop\IdeaProject\bookstore Maven Webapp\src\main\webapp\js" />
-      <recent name="C:\Users\L\Desktop\IdeaProject\bookstore Maven Webapp\src\main\resources\mapper" />
+      <recent name="C:\Users\L\Desktop\IdeaProject\bookstore Maven Webapp\src\main\webapp\css" />
+      <recent name="C:\Users\L\Desktop\IdeaProject\bookstore Maven Webapp\src\main\webapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.laver.bookstore.util" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\L\Desktop\IdeaProject\bookstore Maven Webapp\src\main\webapp\WEB-INF\static" />
-      <recent name="C:\Users\L\Desktop\IdeaProject\bookstore Maven Webapp\src\main\webapp\css" />
-      <recent name="C:\Users\L\Desktop\IdeaProject\bookstore Maven Webapp\src\main\webapp" />
-      <recent name="C:\Users\L\Desktop\IdeaProject\bookstore Maven Webapp\src\main\webapp\images" />
+      <recent name="C:\Users\L\Desktop\IdeaProject\bookstore Maven Webapp\src\main\webapp\js" />
+      <recent name="C:\Users\L\Desktop\IdeaProject\bookstore Maven Webapp\src\main\resources\mapper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -776,7 +1246,7 @@
       <workItem from="1537371624955" duration="2245000" />
       <workItem from="1537450649607" duration="6891000" />
       <workItem from="1537459171807" duration="21000" />
-      <workItem from="1537629259136" duration="5389000" />
+      <workItem from="1537629259136" duration="7774000" />
     </task>
     <task id="LOCAL-00001" summary="update head.html">
       <created>1537023920163</created>
@@ -834,11 +1304,18 @@
       <option name="project" value="LOCAL" />
       <updated>1537457023542</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="bootstrap enhance x.0">
+      <created>1537634847452</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1537634847452</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89276000" />
+    <option name="totallyTimeSpent" value="91661000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -851,6 +1328,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Nl-Palette" order="0" />
       <window_info id="Capture Tool" order="1" />
@@ -858,7 +1336,7 @@
       <window_info id="UI Designer" order="3" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.1881663" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.1881663" />
       <window_info id="Structure" order="7" weight="0.25" />
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
@@ -866,7 +1344,7 @@
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.4961998" />
+      <window_info anchor="bottom" id="Run" order="5" visible="true" weight="0.27578717" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.14332248" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -910,7 +1388,8 @@
     <MESSAGE value="bootstrap" />
     <MESSAGE value="fix front end" />
     <MESSAGE value="bootstrap enhance" />
-    <option name="LAST_COMMIT_MESSAGE" value="bootstrap enhance" />
+    <MESSAGE value="bootstrap enhance x.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="bootstrap enhance x.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -931,48 +1410,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3402">
-          <caret line="126" selection-start-line="126" selection-end-line="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/4.3.4.RELEASE/spring-web-4.3.4.RELEASE.jar!/org/springframework/web/bind/annotation/support/HandlerMethodInvoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1782">
-          <caret line="132" selection-start-line="132" selection-end-line="132" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/back-head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laver/bookstore/util/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laver/bookstore/domain/BookOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11">
-          <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="32" column="27" lean-forward="true" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/laver/bookstore/controller/CartController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-216">
@@ -1264,13 +1701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1278,10 +1708,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="57" column="26" lean-forward="true" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+        <state relative-caret-position="111">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laver/bookstore/controller/GuideController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#758#759#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#913#914#0" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1040#1041#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/bg.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/cart (2).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/buy.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="59" column="49" lean-forward="true" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+     http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd
+     http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+     http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+	<!-- 读取db.properties中的变量 值，db.properties要放在classpath根目录下 -->
+	<context:property-placeholder location="classpath:/db.properties" />
+	
+	<!-- 描述一个数据源,BasicDataSource,c3p0,阿里巴巴 -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="${jdbc.driverClassName}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+	</bean>
+	
+
+	<!--mybatis  SqlSessionFactory配置-->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"/>
+       	<!--  自动扫描到net/togogo/springmybatisproject/dao的xml文件-->
+		<property name="mapperLocations" value="classpath:/mapper/*.xml"/>
+		
+		<!-- 关联mybatis配置文件 -->
+		<property name="configLocation" value="classpath:/SqlMapConfig.xml"></property>
+	</bean>
+	
+	<!-- 自动扫描mybatis定义的mapper类  ，spring扫描到这些mapper类之后，就会向spring容器注册这些mapper类对象-->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage"  value="com.laver.bookstore.mapper"/>
+	</bean>
+	
+</beans>
