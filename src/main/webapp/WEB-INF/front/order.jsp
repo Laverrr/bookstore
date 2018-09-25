@@ -58,7 +58,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</tr>
 					<tr>
 						<td class="field">送货地址：</td>
-						<td><textarea rows="15" cols="15" id="oaddress" name="oaddress" value="${sessionScope.user.adress }" /></textarea>
+						<td><textarea class="form-control" style="width:200px;height:100px;" id="oaddress" name="oaddress" value="${sessionScope.user.adress }" /></textarea>
 						</td>
 					</tr>
 				</table>

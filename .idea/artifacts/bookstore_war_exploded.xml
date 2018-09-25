@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="bookstore:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/bookstore_war_exploded</output-path>
+    <output-path>$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -32,6 +32,9 @@
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.13" />
           <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.4" />
         </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="bookstore/web/Web" />
     </root>
