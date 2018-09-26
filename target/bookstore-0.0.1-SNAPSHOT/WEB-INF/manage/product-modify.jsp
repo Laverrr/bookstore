@@ -13,7 +13,7 @@
 	<div id="logo"><img src="../../images/logo.gif" /></div>
 	<div class="help"><a href="index.do">返回前台页面</a></div>
 	<div class="navbar">
-		<ul class="clearfix">
+		<ul class="bar">
 			<li ><a href="mana.do">首页</a></li>
 			<li><a href="manaUser.do">用户</a></li>
 			<li class="current"><a href="manaBook.do">商品</a></li>
@@ -62,7 +62,7 @@
 					<tr>
 						<td class="field">所属分类：</td>
 						<td>
-							<select name="type">
+							<select name="type" class="form-control" style="width: 90px;">
 								<c:forEach items="${ bts}" var="bt">
 								<option value="${bt }">${bt}</option>
 								</c:forEach>
@@ -93,7 +93,7 @@
 					</tr>
 					<tr>
 						<td></td>
-						<td><label class="ui-blue"><input type="submit" name="submit" value="修改" /></label></td>
+						<td><input type="submit" class="btn btn-info" name="submit" value="修改" /></td>
 					</tr>
 				</table>
 			</form>

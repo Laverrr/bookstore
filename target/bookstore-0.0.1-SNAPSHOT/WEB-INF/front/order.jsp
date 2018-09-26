@@ -24,7 +24,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	</div>
 	<div class="navbar">
 		<button type="button" onclick="window.location.href='index.do'" class="btn btn-warning btn-lg ">首页</button>
-		<div class="search">
+		<div class="searchBook">
 			<form method="post" action="productList.do">
 				查找书籍：<input  type="text" class="text" name="key" placeholder="请输入商品关键字"  /> <input class="btn btn-info" type="submit" name="submit" value="搜索" />
 			</form>
@@ -58,7 +58,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</tr>
 					<tr>
 						<td class="field">送货地址：</td>
-						<td><textarea rows="15" cols="15" id="oaddress" name="oaddress" value="${sessionScope.user.adress }" /></textarea>
+						<td><textarea class="form-control" style="width:200px;height:100px;" id="oaddress" name="oaddress" value="${sessionScope.user.adress }" /></textarea>
 						</td>
 					</tr>
 				</table>

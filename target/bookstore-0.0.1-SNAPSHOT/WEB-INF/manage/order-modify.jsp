@@ -11,7 +11,7 @@
 	<div id="logo"><img src="../../images/logo.gif" /></div>
 	<div class="help"><a href="index.do">返回前台页面</a></div>
 	<div class="navbar">
-		<ul class="clearfix">
+		<ul class="bar">
 			<li ><a href="mana.do">首页</a></li>
 			<li><a href="manaUser.do">用户</a></li>
 			<li><a href="manaBook.do">商品</a></li>
@@ -58,7 +58,7 @@
 					</tr>
 					<tr>
 						<td class="field">状态：</td>
-							<td><select id="status" name="status">
+							<td><select id="status" name="status" class="form-control" style="width: 90px;">
 									<option value="未确认">未确认</option>
 									<option value="未发货">未发货</option>
 									<option value="已发货">已发货</option>
@@ -68,7 +68,7 @@
 						</tr>
 					<tr>
 						<td></td>
-						<td><label class="ui-blue"><input type="submit" name="submit" value="更新" /></label></td>
+						<td><input class="btn btn-info" type="submit" name="submit" value="更新" /></td>
 					</tr>
 				</table>
 			</form>

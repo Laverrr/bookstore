@@ -40,10 +40,12 @@
    </listener>
 
   <!-- 配置spring mvc前端控制器 -->
+    <error-page>
+        <error-code>404</error-code>
+         <location>/WEB-INF/static/404.html</location>
+    </error-page>
 
   <servlet>
-
-
         <servlet-name>springmvc</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>

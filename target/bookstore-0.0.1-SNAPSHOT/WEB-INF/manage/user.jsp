@@ -12,7 +12,7 @@
 	<div id="logo"><img src="../../images/logo.gif" /></div>
 	<div class="help"><a href="index.do">返回前台页面</a></div>
 	<div class="navbar">
-		<ul class="clearfix">
+		<ul class="bar">
 			<li ><a href="mana.do">首页</a></li>
 			<li class="current"><a href="manaUser.do">用户</a></li>
 			<li><a href="manaBook.do">商品</a></li>
@@ -44,7 +44,7 @@
 		<h2>用户管理</h2>
 		<div class="manage">
 				<table class="table table-hover">
-					<tr>
+					<tr class="active">
 						<th>ID</th>
 						<th>姓名</th>
 						<th>性别</th>

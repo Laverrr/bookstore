@@ -11,7 +11,7 @@
 	<div id="logo"><img src="../../images/logo.gif" /></div>
 	<div class="help"><a href="index.do">返回前台页面</a></div>
 	<div class="navbar">
-		<ul class="clearfix">
+		<ul class="bar">
 			<li ><a href="mana.do">首页</a></li>
 			<li class="current"> <a href="manaUser.do">用户</a></li>
 			<li><a href="manaBook.do">商品</a></li>
@@ -52,7 +52,7 @@
 					</tr>
 					<tr>
 						<td class="field">密码：</td>
-						<td><input type="text" class="text" name="password" value="${user.password }" /></td>
+						<td><input type="password" class="text" name="password" value="${user.password }" /></td>
 					</tr>
 					<tr>
 						<td class="field">性别：</td>
@@ -75,7 +75,7 @@
 					</tr>
 					<tr>
 						<td></td>
-						<td><label class="ui-blue"><input type="submit" name="submit" value="更新" /></label></td>
+						<td><input class="btn btn-info" type="submit" name="submit" value="更新" /></td>
 					</tr>
 				</table>
 			</form>
