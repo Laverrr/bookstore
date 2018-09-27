@@ -181,9 +181,9 @@ public class UserController {
 			books.add(book);
 		}
 		if(pageNum!=null){
-			PageHelper.startPage(pageNum,com.laver.bookstore.util.Constant.UO_PAGE_SIZE);
+			PageHelper.startPage(pageNum,com.laver.bookstore.util.Constant.UO_PAGE_SIZE,"date desc");
 		}else{
-			PageHelper.startPage(1, com.laver.bookstore.util.Constant.UO_PAGE_SIZE);
+			PageHelper.startPage(1, com.laver.bookstore.util.Constant.UO_PAGE_SIZE,"date desc");
 		}
 		List<BookOrder> bookOrders = bookOrderService.selectByExample(example);
 		PageInfo<BookOrder> pageInfo = new PageInfo<BookOrder>(bookOrders);

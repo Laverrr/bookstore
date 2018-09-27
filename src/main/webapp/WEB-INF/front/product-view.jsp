@@ -119,8 +119,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								<li><a href="bookView.do?pageNum=${pageInfo.prePage }&bid=${book.bid}">上一页</a></li>
 							</c:when>
 							<c:otherwise>
-								<li>首页</li>
-								<li>上一页</li>
+								<li><span>首页</span></li>
+								<li><span>上一页</span></li>
 							</c:otherwise>
 						</c:choose>
 
@@ -137,8 +137,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								<li><a href="bookView.do?pageNum=${pageInfo.pages }&bid=${book.bid}">尾页</a></li>
 							</c:when>
 							<c:otherwise>
-								<li>下一页</li>
-								<li>尾页</li>
+								<li><span>下一页</span></li>
+								<li><span>尾页</span></li>
 							</c:otherwise>
 						</c:choose>
 					</ul>

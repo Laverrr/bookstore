@@ -99,9 +99,9 @@ public class BookOrderController {
 		}
 		session.setAttribute("boexample", boexample);
 		if(pageNum!=null){
-			PageHelper.startPage(pageNum,com.laver.bookstore.util.Constant.UO_PAGE_SIZE);
+			PageHelper.startPage(pageNum,com.laver.bookstore.util.Constant.UO_PAGE_SIZE,"date desc");
 		}else{
-			PageHelper.startPage(1, com.laver.bookstore.util.Constant.UO_PAGE_SIZE);
+			PageHelper.startPage(1, com.laver.bookstore.util.Constant.UO_PAGE_SIZE,"date desc");
 		}
 		List<BookOrder> bookOrders = bookOrderService.selectByExample(boexample);
 		PageInfo<BookOrder> pageInfo = new PageInfo<BookOrder>(bookOrders);
@@ -149,7 +149,7 @@ public class BookOrderController {
             cri.andOnameLike("%"+oname+"%");
         }
         session.setAttribute("oname",oname);
-		PageHelper.startPage(pageNum, com.laver.bookstore.util.Constant.UO_PAGE_SIZE);
+		PageHelper.startPage(pageNum, com.laver.bookstore.util.Constant.UO_PAGE_SIZE,"date desc");
 		List<BookOrder> bookOrders = bookOrderService.selectByExample(bookOrderExample);
 		for (BookOrder bookOrder : bookOrders) {
 			OrderDetailExample orderDetailExample = new OrderDetailExample();
