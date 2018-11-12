@@ -71,7 +71,7 @@
 					
 					<tr>
 						<td></td>
-						<td><label class="ui-blue"><input type="submit" name="submit" value="添加" /></label></td>
+						<td><input class="btn btn-info" type="submit" name="submit" value="添加" /></td>
 					</tr>
 				</table>
 			</form>

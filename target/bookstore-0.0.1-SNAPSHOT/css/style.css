@@ -105,6 +105,7 @@ label.error {
 #main .lefter .last-view dl dd { height:60px; margin-left:66px; }
 #main .lefter .last-view dl dd a { color:#666; }
 #main .main { float:right; width:770px; }
+#main .mainOrder { float:right; width:1000px; }
 #main .main .price-off { float:left; width:520px; }
 #main .main .side { float:right; width:235px; }
 #main .left-side { float:left; width:235px; }
@@ -180,7 +181,7 @@ ul.product li dl dd.price { color:#c30; font-weight:bold; }
 #chat-room .righter .reply label { vertical-align:middle; }
 #news .content { font-size:14px; line-height:30px; padding:15px; }
 
-.manage { padding:20px; overflow:hidden; }
+.manage { padding:20px; overflow:hidden;}
 .manage .list { width:100%; border-top:2px solid #dfc9b2; border-bottom:2px solid #dfc9b2; }
 .manage .list th { background:#f7f4eb; color:#8a7152; }
 .manage .list td { padding:5px; border-top:1px solid #dfc9b2; }

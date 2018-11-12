@@ -40,7 +40,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	</div>
 </div>
 <div id="main" class="wrap">
-	<div class="main">
+	<div class="mainOrder">
 		<h2>我的订单</h2>
 		<div class="manage">
 			<div class="spacer"></div>
@@ -51,8 +51,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							<td class="w1 c">${bookOrder.date}</td>
 							<td class="w1 c">收货人:${bookOrder.oname}</td>
 							<td>收货地址：${bookOrder.adress}</td>
-							<td class="w1 c">状态</td>
-							<td class="w1 c">评价</td>
+							<td class="w1 c">订单状态</td>
+							<td class="w1 c">评价状态</td>
 						</tr>
 							<c:forEach items="${orderDetails }" var="orderDetail">
 							<c:if test="${bookOrder.oid==orderDetail.orderId}">
@@ -65,7 +65,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 											<td>￥${book.pirce*orderDetail.bookNum }</td>
 											<td class="w1 c">${bookOrder.status }</td>
 											<c:if test="${orderDetail.status=='待评价' }">
-											<td class="w1 c"><a href="commentPage.do?bid=${book.bid }&odid=${orderDetail.id }">待评价</a></td>
+											<td class="w1 c">
+												<c:choose>
+													<c:when test="${bookOrder.status=='已签收'}">
+														<a href="commentPage.do?bid=${book.bid }&odid=${orderDetail.id }">待评价</a>
+													</c:when>
+													<c:otherwise>
+														<span >待评价</span>
+													</c:otherwise>
+
+												</c:choose>
+											</td>
 											</c:if>
 											<c:if test="${orderDetail.status=='已评价' }">
 											<td class="w1 c">已评价</td>

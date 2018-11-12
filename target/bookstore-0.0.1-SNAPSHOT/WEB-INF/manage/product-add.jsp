@@ -60,7 +60,7 @@
 					<tr>
 						<td class="field">所属分类：</td>
 						<td>
-							<select name="type">
+							<select name="type" class="form-control" style="width: 90px;">
 								<c:forEach items="${ bts}" var="bt">
 								<option value="${bt }">${bt}</option>
 								</c:forEach>
@@ -91,7 +91,7 @@
 					</tr>
 					<tr>
 						<td></td>
-						<td><label class="ui-blue"><input type="submit" name="submit" value="添加" /></label></td>
+						<td><input class="btn btn-info" type="submit" name="submit" value="添加" /></td>
 					</tr>
 				</table>
 			</form>
