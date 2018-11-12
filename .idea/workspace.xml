@@ -10,19 +10,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/laver/bookstore/controller/BookOrderController.java" line="90" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="746f3667-af67-4fe8-a3d4-e5120a2ca057" name="Default" comment="beautiful UI 3.0">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/classes/com/laver/bookstore/controller/BookOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/classes/com/laver/bookstore/controller/BookOrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/classes/com/laver/bookstore/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/classes/com/laver/bookstore/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/comment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/comment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/product-view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/product-view.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/user-order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/front/user-order.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/manage/product-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/manage/product-add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/manage/user-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/WEB-INF/manage/user-add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookstore-0.0.1-SNAPSHOT/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laver/bookstore/controller/BookOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laver/bookstore/controller/BookOrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laver/bookstore/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laver/bookstore/controller/UserController.class" afterDir="false" />
-    </list>
+    <list default="true" id="746f3667-af67-4fe8-a3d4-e5120a2ca057" name="Default" comment="beautiful UI 3.0" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,11 +95,12 @@
           <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -163,7 +152,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/laver/bookstore/controller/BookController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
+            <state relative-caret-position="140">
               <caret line="219" column="19" selection-start-line="219" selection-start-column="19" selection-end-line="219" selection-end-column="19" />
             </state>
           </provider>
@@ -172,7 +161,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/String.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
+            <state relative-caret-position="15768">
               <caret line="633" column="19" selection-start-line="633" selection-start-column="19" selection-end-line="633" selection-end-column="19" />
               <folding>
                 <element signature="e#23072#23073#0" expanded="true" />
@@ -185,7 +174,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/laver/bookstore/controller/BookOrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
+            <state relative-caret-position="1431">
               <caret line="80" column="86" selection-start-line="80" selection-start-column="86" selection-end-line="80" selection-end-column="86" />
             </state>
           </provider>
@@ -212,7 +201,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/user-order.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
+            <state relative-caret-position="1971">
               <caret line="73" column="63" selection-start-line="73" selection-start-column="63" selection-end-line="73" selection-end-column="66" />
             </state>
           </provider>
@@ -411,7 +400,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -436,41 +424,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bookstore" type="b2602c69:ProjectViewProjectNode" />
@@ -508,7 +461,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -850,6 +803,7 @@
       <workItem from="1538063436547" duration="2637000" />
       <workItem from="1539008500360" duration="6000" />
       <workItem from="1539507191749" duration="1498000" />
+      <workItem from="1542039317475" duration="296000" />
     </task>
     <task id="LOCAL-00001" summary="update head.html">
       <created>1537023920163</created>
@@ -953,7 +907,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99295000" />
+    <option name="totallyTimeSpent" value="99591000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -965,8 +919,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info id="Nl-Palette" order="0" />
       <window_info id="Capture Tool" order="1" />
@@ -974,7 +927,7 @@
       <window_info id="UI Designer" order="3" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.21375267" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.21588486" />
       <window_info id="Structure" order="7" weight="0.25" />
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
@@ -982,7 +935,7 @@
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Run" order="5" weight="0.3572204" />
+      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.6264929" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.14332248" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -1308,6 +1261,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15768">
+          <caret line="633" column="19" selection-start-line="633" selection-start-column="19" selection-end-line="633" selection-end-column="19" />
+          <folding>
+            <element signature="e#23072#23073#0" expanded="true" />
+            <element signature="e#23112#23113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laver/bookstore/controller/BookOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1431">
+          <caret line="80" column="86" selection-start-line="80" selection-start-column="86" selection-end-line="80" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/laver/bookstore/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1782">
@@ -1319,6 +1290,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/user-order.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1971">
+          <caret line="73" column="63" selection-start-line="73" selection-start-column="63" selection-end-line="73" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -1343,34 +1321,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/front/user-order.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="73" column="63" selection-start-line="73" selection-start-column="63" selection-end-line="73" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laver/bookstore/controller/BookOrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="80" column="86" selection-start-line="80" selection-start-column="86" selection-end-line="80" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="633" column="19" selection-start-line="633" selection-start-column="19" selection-end-line="633" selection-end-column="19" />
-          <folding>
-            <element signature="e#23072#23073#0" expanded="true" />
-            <element signature="e#23112#23113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/laver/bookstore/controller/BookController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
+        <state relative-caret-position="140">
           <caret line="219" column="19" selection-start-line="219" selection-start-column="19" selection-end-line="219" selection-end-column="19" />
         </state>
       </provider>
@@ -1434,6 +1387,7 @@
             <option name="proportions">
               <list>
                 <option value="0.49056605" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
