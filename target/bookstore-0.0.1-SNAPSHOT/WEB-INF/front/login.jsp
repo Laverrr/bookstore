@@ -64,7 +64,7 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td><input class="btn btn-success" type="submit" id="submit" value="登录"/></td>
+                        <td><input class="btn btn-success" type="button" id="submit" value="登录"/></td>
                     </tr>
                 </table>
             </form>
