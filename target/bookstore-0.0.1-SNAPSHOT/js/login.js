@@ -24,25 +24,55 @@ $(document).ready(function () {
         }
     });
 });
+// $(document).ready(function(){
+//     $("#submit").click(function(){
+//         $.post("loginCheck.do",{
+//                 userName:$("#userName").val(),
+//                 passWord:$("#passWord").val()
+//             },
+//             function(data){
+//                 if(data=='success'){
+//                     window.location.href="index.do";
+//                 }
+//                 if(data=='false'){
+//                     alert("账号或密码不正确");
+//                 }
+//                 if(data=='nameEmpty'){
+//                     alert("账号不能为空");
+//                 }
+//                 if(data=='pwdEmpty'){
+//                     alert("密码不能为空");
+//                 }
+//             });
+//     });
+// });
 $(document).ready(function(){
     $("#submit").click(function(){
-        $.post("loginCheck.do",{
+        $.ajax({
+            type: "post",
+            url: "loginCheck.do",
+            data: {
                 userName:$("#userName").val(),
                 passWord:$("#passWord").val()
             },
-            function(data){
-                if(data=='success'){
+            dataType: "text",
+            success: function(result){
+                if(result=='success'){
                     window.location.href="index.do";
                 }
-                if(data=='false'){
+                if(result=='false'){
                     alert("账号或密码不正确");
                 }
-                if(data=='nameEmpty'){
+                if(result=='nameEmpty'){
                     alert("账号不能为空");
                 }
-                if(data=='pwdEmpty'){
+                if(result=='pwdEmpty'){
                     alert("密码不能为空");
                 }
-            });
+            },
+            error: function() {
+                alert("登陆失败");
+            }
+        });
     });
 });
